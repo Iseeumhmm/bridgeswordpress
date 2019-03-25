@@ -1,0 +1,14 @@
+.front-9, .back-9 {
+    font-weight: $regular;
+    .grid__inner-text {
+        i  {
+            font-size: 6rem;
+        }
+    }
+    .grid-view {
+        background-size: cover;
+        transform: rotate(90deg);
+        filter: brightness(55%);
+    }
+    
+}

@@ -1,0 +1,170 @@
+<?php
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package BridgesAtTillsonburg
+ */
+
+get_header();?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+            <section class="about">
+                    <div class="hero">
+                        <img class="darken" src="<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-about.jpg" alt="About Banner">
+                        <div class="hero__main-green-text center-text">
+                                <h1>About us</h1>
+                        </div>
+                    </div>
+            </section>
+            <!-- ****************************************  ALTERNATING IMAGES  **************************************** -->
+
+            <section>
+                <div class="container-fluid px-0 mx-0 mt-7">
+                    <div class="row">
+                        <div class="col-lg-6 px-0">
+                            <img class="contact-logo darken"src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/clubhouse.jpg" alt="Club House">
+                        </div>
+                        <div class="d-flex col-lg-6 px-0">
+                            <div class="contact__info--contact-us align-self-center pl-7 pr-8">
+                                <h1 class="text-capitalize">The Clubhouse</h1>
+                                <p>We want everyone to feel right at home here at The Bridges. Our warm and cozy clubhouse is the perfect spot to call your second home. Join us for great dining, a refreshing drink or just to say hello as the doors are always open and someone is sure to be here with a smile on their face. <p>
+                                <p class="mt-5">After your round of golf or dining experience, enjoy a beverage and a meal on Tillsonburg’s largest patio, surrounded by nature. Our friendly and accommodating staff will ensure your time off the course is as enjoyable as the time you spend on the course.</p>
+                            </div>
+                        </div>
+                    <div class="row mt-7">
+                        <div class="d-flex col-lg-6 px-0">
+                            <div class="contact__info--contact-us align-self-center pl-7 pb-6 pr-8">
+                                <h1 class="text-capitalize">Mulligans Place</h1>
+                                <p>Mulligans is the perfect place to grab a bite before your game, meet with family, colleagues and friends, or simply relax after a round of golf. Chef Vasco Serrador operates our newly redesigned pub, overseeing an inspired menu of clubhouse classics with locally sourced ingredients.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 px-0">
+                            <img class="contact-logo darken"src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/clubhouse.jpg" alt="Club House">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <!-- ****************************************  PRO SHOP IMAGE  **************************************** -->
+
+            <section class="hero-banner mt-7" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
+                <div class="container-fluid pb-7 color-white font-regular text-center">
+                    <div class="d-flex row align-text-top mx-0 justify-content-center">
+                        <div class="text-items col-lg-6 align-self-end">
+                            <h1 class="font-semi-bold color-white pb-5">Pro Shop</h1>
+                            <p class="font-sans font-regular">The Bridges at Tillsonburg's Pro Shop is where golfers of all abilities will find all of the necessities for their round, as well as interesting golf specialty items.</p>
+                            <a href="#">
+                                <div class="hero__main-view">
+                                    <p class="hero__main-view--text text-items--cta">View our current specials</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+                <!-- *******************************************  OUR TEAM  ******************************************* -->
+            <section class="team">
+                <div class="container-fluid px-0 mx-0 mt-7">
+                    <div class="center-text">
+                        <h1>our team</h1>
+                    </div>
+                    <div class="row justify-content-center center-text">
+                        <div class="col-md-6">
+                            <p class="">The team at The Bridges at Tillsonburg are seasoned members of the community. We are passionate about golf and hospitality and we hope to share our experience and love of the game with all of our members.</p>
+                            <p class="py-6"> It is our goal to create a place that you feel comfortable, and that we can build a community around. We look forward to seeing you in the clubhouse and out on the course.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center center-text">
+                        <div class="col-md-auto px-5">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/tyler-martindale.jpg" alt="Tyler Martindale">
+                            <h2>Tyler Martindale</h2>
+                            <p>Golf Professional</p>
+                        
+                        </div>
+                        <div class="col-md-auto px-5">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/taylor-thoonen.jpg" alt="Taylor Thoonen">
+                            <h2>Taylor Thoonen</h2>
+                            <p>Food & Beverage Manager</p>
+                        
+                        </div>
+                        <div class="col-md-auto px-5">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/vasco-serrador.jpg" alt="Vasco Serrador">
+                            <h2>Vasco Serrador</h2>
+                            <p>Head Chef</p>
+                        
+                        </div>
+                        <div class="col-md-auto px-5">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/shayne-tremblay.jpg" alt="Shayne Tremblay">
+                            <h2>Shayne Tremblay</h2>
+                            <p>Superintendent</p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+                <!-- ****************************************  CARROLL TRAIL IMAGE  **************************************** -->
+
+            <section class="hero-banner" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg');">
+                <div class="container-fluid pb-7 color-white font-regular">
+                    <h1 class="text-center pt-7 pb-5 color-white">The Carroll Trail</h1>
+                    <div class="row carroll-trail align-text-top justify-content-center">
+                        <div class="col-lg-4 text-left pr-6">
+                            <p class="font-sans font-regular">A unique feature of The Bridges at Tillsonburg golf course is the fact that there is a community trail system weaving through the new expansion holes on the golf course.<br><br> The trail system became a major attraction for the Tillsonburg Golf Club's expansion to 18 holes. The Tillsonburg Trail Committee (TTC) was formed and undertook the fundraising for this $1.2 million dollar project. The project was completely fund raised and paid for by public donations with the generous support of Pat and Liz Carroll and family.<br><br> This non-motorized 3-season trail is fully accessible to the public and compliments the existing trail systems throughout the town. The 5.1 km trail winds through beautiful natural areas in, around and through the Otter Creek floodplain crossing the creek in a number of locations. </p>
+                        </div>
+                        <div class="col-lg-4 text-left pl-6">
+                            <p>It provides recreation opportunities for residents and tourists alike. The 2.8 metre width can accommodate two-way traffic for walking, jogging and cross country skiing.<br><br> Sections of the Carroll Trail are finished with asphalt due to the elevation changes and to prevent erosion on these sloped areas. Approximately 170 tons of Armor-stone were used for erosion control and to give character to the trail and 6,000 tons of gravel and screenings were put down to make up the trail itself. Many native to the Carolinian Forest trees were planted along the entire trail system for beauty and to provide erosion control. Native plants, in the form of 'live stakes' were added as well.<br><br>  The Carroll Trail trail head originates in Coronation Park where there is ample parking available.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container-fluid px-0 mx-0">
+                    <div class="row justify-content-center footer-container">
+                        <div class="col-sm-2 footer-col px-0">
+                            <ul class="footer-col-ul">
+                                <li><h2>The Bridges at Tillsonburg</h2></li>
+                                <li>101 John Pound Road</li>
+                                <li>Tillsonburg, ON N4G 4H3</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 footer-col mx-7">
+                            <ul class="footer-col-ul">
+                                    <li><h2>Members</h2></li>
+                                    <a href="#"><li>Lessons</li></a>
+                                    <a href="#"><li>Tee Times</li></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 footer-col mx-7">
+                            <ul class="footer-col-ul">
+                                <li><h2>Contact Us</h2></li>
+                                <a href="tel:5198424142"><li>519 842 4142</li></a>
+                                <a href="#"><li>Send an Email</li></a>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 footer-col px-0">
+                            <ul class="footer-col-ul">
+                                <li><h2>Sitemap</h2></li>
+                                <a href="#"><li>Privacy Policy</li></a>
+                                <a href="#"><li><i class="fab fa-facebook"></i></li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"      crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"                         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            </footer>
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+<?php
+get_footer();
+    

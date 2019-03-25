@@ -1,0 +1,34 @@
+.about {
+    .hero {
+        width: 100%;
+       max-height: 600px;
+    }
+}
+
+.hero-banner {
+    position: relative;
+    min-height: 60rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .text-items {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 5rem;
+      &--cta {
+          width: 30rem;
+      }
+  }
+
+  // ********************************************  iPAD PORTRAIT (992px)  *********************************************
+@include respond(tab-land) {
+    .carroll-trail {
+        .col-lg-4.pl-6 {
+            padding: 0 3rem !important;
+        }
+        .col-lg-4.pr-6 {
+            padding: 0 3rem !important;
+        }
+    }
+}

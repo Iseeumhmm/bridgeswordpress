@@ -1,0 +1,26 @@
+.center-text { text-align: center; }
+.uppercase-text { text-transform: uppercase; }
+.margin-bottom-small { margin-bottom: 1.25rem; }
+.margin-bottom-medium { margin-bottom: 4rem; }
+.margin-bottom-big { margin-bottom: 8rem; }
+.font-serif { font-family: $font-serif; }
+.font-sans { font-family: $font-sans; }
+.font-regular { font-weight: $regular; }
+.font-semi-bold { font-weight: $semi-bold; }
+
+
+// *********************** HERO BRIGHTNESS FILTER ***********************
+
+.darken { filter: brightness(75%); }
+
+// ****************************** COLOURS *******************************
+
+.color-white { color: $color-white; }
+
+// *********************** Bootstrap Overrides ***********************
+
+
+.px-nav-link {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }

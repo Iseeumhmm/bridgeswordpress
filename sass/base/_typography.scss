@@ -1,0 +1,19 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    color: $color-brown;
+    font-size: $default-font-size;
+}
+
+
+#navbarMenu a {
+    text-transform: uppercase;
+}
+.footer-container ul li h2, .contact h2, .team h2{
+    color: black;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+}
+.footer-container ul{
+}

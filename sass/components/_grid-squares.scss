@@ -1,0 +1,204 @@
+// ********************************************  GRID ELEMENTS  ********************************************
+
+.square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1*/
+}
+.rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 200%;  /* initial ratio of 1:1*/
+}
+
+.grid {
+    &-section {
+        font-weight: $regular;
+        line-height: 2.85rem;
+        padding: 5rem 0;
+        p {
+            margin: 2rem 0;
+        }
+    }
+    &-box {
+        border: .75rem solid $color-white;
+        height: 100%;
+    }
+    &-img {
+        border: .75rem solid $color-white;
+        background-size: cover; 
+    }
+    &-view {
+        height: 100%;
+    }
+    &-calendar {
+        width: 70%;
+        height: 30%;
+        outline: 1px solid $color-white;
+        @include absCenter;
+        &--text {
+            font-family: $font-serif;
+            font-size: 2.4rem;
+        }
+    }
+    &-gold {
+        background-color: $color-gold;
+    }
+    &-silver {
+        background-color: $color-silver;
+    }
+    &-bronze {
+        background-color: $color-bronze;
+    }
+    &-black {
+        background-color: $color-black;
+
+    }
+    &__inner {
+        &-text {
+            color: $color-white;
+            @include absCenter;
+            width: 90%;
+            z-index: 100;
+        }
+        &-text h1 {
+            font-size: 2.75rem;
+            margin-bottom: 2rem;
+            color: $color-white;
+        }
+        &-text p {
+            font-size: $default-font-size;
+        }
+        &-dash-padding {
+            padding: .5rem 0;
+        }
+        &-food-truck {
+            span {
+                font-size: 3rem;
+            }
+            line-height: 2.5rem;
+            &--text {
+                font-family: $font-serif;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+p.grid__inner {
+    &-text {
+        margin: 0;
+    }
+    &-bracketed {
+        font-size: 1.25rem;
+    }
+}
+
+
+.overlay {
+    height: calc(100vw/5.9);
+    background-color: #000;
+    z-index: 200;
+}
+img.grid {
+    height: calc(100vw/5.9);
+    border: .75rem solid $color-white;
+}
+
+// ********************************************  iPad LANDSCAPE  ********************************************
+
+@include respond(tab-land) {
+    img.grid {
+        height: inherit;
+        border: .75rem solid $color-white;
+    }
+    .overlay {
+        height: inherit;
+    }
+    .row.no-margin {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    img.grid {
+        // border: none;
+        width: 100%;
+        height: 100%;
+    }
+    div.grid {
+        &-view {
+            
+            width: 100%;
+            height: 100%;
+        }
+        &-img {
+            width: calc(100vw-4rem);
+        }
+       
+    }
+    div.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .grid {
+        // &__inner {
+        //    &-text {
+        //         line-height: 7rem;
+        //         font-size: 5rem;
+        //         span {
+        //             font-size: 10rem;
+        //         }
+        //         h1 {
+        //             font-size: 7rem;
+        //             margin: -5rem 0 5rem;
+        //         }
+        //         p {
+        //             font-size: 5rem;
+        //         }
+        //     }
+        // }
+       
+        &-header {
+            font-size: $default-font-size;
+        }
+        &-calendar {
+            // border-left: 2rem solid $color-white;
+            // border-right: 2rem solid $color-white;
+            // border-bottom: 2rem solid $color-white;
+            // width: 40vw;
+            // height: 25vw;
+        }
+    }
+    .grid-box {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ********************************************  LARGE PHONE (764px) ********************************************
+
+@include respond(large-phone) {
+    .grid {
+    //     &__inner {
+    //         &-text {
+    //             line-height: 4rem;
+    //             font-size: 2.5rem;
+    //             span {
+    //                 font-size: 3.5rem;
+    //             }
+    //             h1 {
+    //                 font-size: 4rem;
+    //                 margin: -3rem 0 3rem;
+    //             }
+    //             p {
+    //                 font-size: 3rem;
+    //             }
+    //         }
+    //     }
+        &-calendar {
+            width: 40vw;
+            height: 25vw;
+        }
+    }
+}
+
+

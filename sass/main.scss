@@ -1,0 +1,29 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Work+Sans:400,600');
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "components/button";
+@import "components/navbar";
+@import "components/grid-squares";
+
+@import "layout/header";
+@import "layout/footer";
+
+
+@import "pages/home";
+@import "pages/contact";
+@import "pages/greenfees";
+@import "pages/about";
+@import "pages/course";
+
+
+

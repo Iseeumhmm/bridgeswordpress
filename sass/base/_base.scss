@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px : 10px/16px = 62.5% 
+
+    @include respond(tab-land){
+        font-size: 56.25%; //1rem = 9px : 9px/16px = 56.25% (1200px)
+    }
+
+    @include respond(tab-port){
+        font-size: 50%; //1rem = 8px : 8px/16px = 50% (992px)
+    }
+
+    @include respond(large-phone){
+        font-size: 62.5%; //1rem = 8px : 8px/16px = 50% (450px)
+    }
+    @include respond(small-phone){
+        font-size: 50%; //1rem = 8px : 8px/16px = 50% (360px)
+    }
+    @include respond(big-desktop){
+        font-size: 62.5%; //1 rem = 10px : 10px/16px = 62.5%  (1800px)
+    }
+
+    // @include respond(big-desktop){
+    //     font-size: 75%; //1rem = 12 px : 12/16 = 75% (1800px)
+    // }
+}
+
+body {
+    box-sizing: border-box;   
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-black;
+    font-size: 4.8rem;
+}

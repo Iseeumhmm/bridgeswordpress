@@ -1,0 +1,56 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package BridgesAtTillsonburg
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/css/style.css">
+    <!-- <title>Bridges at Tillsonburg</title> -->
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bridgesattillsonburg' ); ?></a>
+
+        <header id="masthead" class="site-header">
+        <div class="container-fluid p-0" id="outer"></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="logo">
+                    <a href="/bridges" class="navbar-brand">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler mr-7" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <a href="#" class="nav-link px-nav-link">Book a tee</a>
+                        <a href="bridges/about" class="nav-link px-nav-link">About</a>
+                        <a href="#" class="nav-link px-nav-link">Golf</a>
+                        <a href="#" class="nav-link px-nav-link">Events</a>
+                        <a href="/bridges/contact" class="nav-link px-nav-link">Contact</a>
+                        <a href="/bridges/greenfees" class="nav-link px-nav-link">Green fees</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </header><!-- #masthead -->
+
+        <div id="content" class="site-content">
