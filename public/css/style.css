@@ -11812,25 +11812,27 @@ body {
   box-sizing: border-box;
 }
 
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  color: inherit;
+body a,
+body a:link,
+body a:visited,
+body a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
   cursor: pointer;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
+body h1 {
   font-family: "EB Garamond", serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #1a1a1a;
-  font-size: 4.8rem;
+  font-size: 6rem;
+  margin: 0;
+}
+
+body p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11881,6 +11883,10 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.default-font-size {
+  font-size: 1.8rem;
+}
+
 .font-regular {
   font-weight: 400;
 }
@@ -11896,6 +11902,18 @@ body {
 
 .color-white {
   color: #fff;
+}
+
+.color-brown {
+  color: #7f6441;
+}
+
+.color-gold {
+  color: #cc9754;
+}
+
+.black-background {
+  background-color: #1a1a1a;
 }
 
 .px-nav-link {
@@ -12043,20 +12061,21 @@ ul.ml-auto {
           transform: translate(-50%, -50%);
   width: 90%;
   z-index: 100;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .grid__inner-text h1 {
-  font-size: 2.75rem;
-  margin-bottom: 2rem;
+  font-size: 3.6rem;
   color: #fff;
 }
 
-.grid__inner-text p {
-  font-size: 1.8rem;
+.grid__inner p {
+  margin-bottom: 0;
 }
 
 .grid__inner-dash-padding {
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
 }
 
 .grid__inner-food-truck {
@@ -12152,6 +12171,10 @@ img.grid {
 footer {
   margin-top: 3rem;
   font-weight: 400;
+}
+
+footer li {
+  color: #7f6441;
 }
 
 .footer-container {
@@ -12256,8 +12279,12 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 100%;
   overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3.6rem;
 }
 
 .hero_container {
@@ -12556,10 +12583,6 @@ footer {
   position: relative;
 }
 
-.contact__info--contact-us {
-  padding-top: 5rem;
-}
-
 .contact__info--contact-us h1 {
   padding-bottom: 1rem;
   font-size: 6rem;
@@ -12779,5 +12802,97 @@ footer {
           transform: rotate(90deg);
   -webkit-filter: brightness(55%);
           filter: brightness(55%);
+}
+
+.course-statistics table {
+  background-color: #FFFAF1;
+}
+
+.download-pdf {
+  position: relative;
+}
+
+.download-pdf .container-fluid {
+  text-transform: uppercase;
+  width: 100vw;
+  height: 15rem;
+}
+
+.download-pdf h1 {
+  margin: 0;
+}
+
+.download-pdf p {
+  margin: 0;
+}
+
+.download-pdf .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.lessons-clinics {
+  position: relative;
+}
+
+.lessons-clinics .book-now {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-family: "EB Garamond", serif;
+  font-size: 2.2rem;
+}
+
+.lessons-clinics .gift-box {
+  position: relative;
+}
+
+.lessons-clinics .gift-box h1 {
+  font-size: 3.6rem;
+}
+
+.lessons-clinics .gift-text {
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+}
+
+.league-info p,
+.dates-times p {
+  color: #7f6441;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.league-rows h1,
+.league-rows h2,
+.league-rows h3,
+.dates-times h1,
+.dates-times h2,
+.dates-times h3 {
+  text-transform: uppercase;
+  font-family: font-serif;
+  color: #1a1a1a;
+}
+
+.league-rows h2,
+.dates-times h2 {
+  padding-top: 4rem;
+  font-size: 2.4rem;
+}
+
+.league-rows h3,
+.dates-times h3 {
+  padding: 0 0 2rem;
+  font-size: 1.8rem;
+}
+
+.league-rows ul,
+.dates-times ul {
+  margin: 3rem 0 0 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 

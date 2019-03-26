@@ -10,5 +10,28 @@
         transform: rotate(90deg);
         filter: brightness(55%);
     }
-    
+}
+
+.course-statistics {
+    table {
+        background-color: #FFFAF1;
+    }
+}
+
+.download-pdf {
+    position: relative;
+    .container-fluid {
+        text-transform: uppercase;
+        width: 100vw;
+        height: 15rem;
+    }
+    h1 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .text-container {
+         @include absCenter;
+    }
 }

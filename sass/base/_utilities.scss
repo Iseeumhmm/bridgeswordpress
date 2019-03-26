@@ -5,6 +5,7 @@
 .margin-bottom-big { margin-bottom: 8rem; }
 .font-serif { font-family: $font-serif; }
 .font-sans { font-family: $font-sans; }
+.default-font-size { font-size: $default-font-size; }
 .font-regular { font-weight: $regular; }
 .font-semi-bold { font-weight: $semi-bold; }
 
@@ -16,7 +17,9 @@
 // ****************************** COLOURS *******************************
 
 .color-white { color: $color-white; }
-
+.color-brown { color: $color-brown; }
+.color-gold { color: $color-gold; }
+.black-background { background-color: $color-black; }
 // *********************** Bootstrap Overrides ***********************
 
 

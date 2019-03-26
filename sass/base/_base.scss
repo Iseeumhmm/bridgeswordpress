@@ -39,25 +39,24 @@ html {
 
 body {
     box-sizing: border-box;   
-}
-
-a,
-a:link,
-a:visited {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-black;
-    font-size: 4.8rem;
+    a,
+    a:link,
+    a:visited,
+    a:hover {
+        text-decoration: none !important;
+        color: inherit !important;
+        cursor: pointer;
+    }
+    h1 {
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-black;
+        font-size: 6rem;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }

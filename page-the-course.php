@@ -28,7 +28,7 @@ get_header();?>
             <section class="course">
                 <div class="container-fluid px-0 mx-0 mt-7">
                     <div class="row justify-content-center center-text">
-                        <div class="col-md-6">
+                        <div class="col-md-6 color-brown">
                             <p>Founded in 1925, and expanded to an 18-hole, par 70 course in 2009, The Bridges at Tillsonburg offers the best of traditional course style, beautiful views and challenging gameplay.</p>
                             <p>With well-manicured greens, elevation changes, and lush fairways lined with large trees, The Bridges at Tillsonburg has been delicately carved out of nature, straddling the Big Otter Creek, and provides spectacular views.</p>
                             <p class="pb-6">The 4 sets of tees allow players of all skill levels to choose their challenge.</p>
@@ -258,9 +258,102 @@ get_header();?>
                             </div>
                         </div>
                     </div>
-                    <div class="center-text font-regular mt-5">
-                        <p>All prices include HST</p>
+                </div>
+            </section>
+                    <!-- ******************************************  COURSE STATISTICS  ****************************************** -->
+
+            <section class="course-statistics">
+                <div class="container-fluid text-center pt-6">
+                    <p class="uppercase-text"><h1>Course Statistics</h1></p>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-8 col-lg-6">
+                            <table width="100%" class="text-left table table-borderless table-responsive-xs color-brown">
+                                <thead class="text-uppercase font-serif color-white black-background">
+                                    <th>Tee</th>
+                                    <th>Par</th>
+                                    <th>Length</th>
+                                    <th>Rating</th>
+                                    <th>Slope</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bronze</td>
+                                        <td>70</td>
+                                        <td>5739 yards</td>
+                                        <td>69.2</td>
+                                        <td>126</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blue</td>
+                                        <td>70</td>
+                                        <td>5442 yards</td>
+                                        <td>68.5</td>
+                                        <td>122</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blue (W)</td>
+                                        <td>70</td>
+                                        <td>5442 yards</td>
+                                        <td>72.4</td>
+                                        <td>125</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White</td>
+                                        <td>70</td>
+                                        <td>5135 yards</td>
+                                        <td>67.0</td>
+                                        <td>118</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White (W)</td>
+                                        <td>70</td>
+                                        <td>5135 yards</td>
+                                        <td>70.6</td>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White/Green</td>
+                                        <td>70</td>
+                                        <td>4733 yards</td>
+                                        <td>65.0</td>
+                                        <td>110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White/Green (W)</td>
+                                        <td>70</td>
+                                        <td>4733 yards</td>
+                                        <td>68.0</td>
+                                        <td>120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>70</td>
+                                        <td>4294 yards</td>
+                                        <td>63.5</td>
+                                        <td>101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red (W)</td>
+                                        <td>70</td>
+                                        <td>4294 yards</td>
+                                        <td>66.0</td>
+                                        <td>111</td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                        </div>
                     </div>
+                </div>
+            </section>
+                <!-- ******************************************  DOWNLOAD SCORECARD  ****************************************** -->
+            <section class="download-pdf py-7">
+                <div class="container-fluid black-background text-center color-white">
+                    <a href="#">
+                        <div class="text-container">
+                            <p class="font-sans font-regular">Download our</p>
+                            <h1 class="color-white">Scorecard</h1>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main><!-- #main -->

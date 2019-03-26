@@ -1,0 +1,28 @@
+.league-info, .dates-times {
+    p {
+        color: $color-brown;
+        font-size: $default-font-size;
+        font-weight: $regular;
+    }
+}
+
+.league-rows, .dates-times {
+    h1, h2, h3 {
+        text-transform: uppercase;
+        font-family: font-serif;
+        color: $color-black;
+    }
+    h2 {
+        padding-top: 4rem;
+        font-size: $medium-font-size;
+    }
+    h3 {
+        padding: 0 0 2rem;
+        font-size: $default-font-size;
+    }
+    ul {
+        margin: 3rem 0 0 2rem;
+        font-size: $default-font-size;
+        font-weight: $regular;
+    }
+}
