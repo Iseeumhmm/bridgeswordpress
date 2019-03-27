@@ -19,20 +19,23 @@
                     <div class="col-xl-auto footer-col px-0">
                         <ul class="footer-col-ul">
                             <li><h2>The Bridges at Tillsonburg</h2></li>
+                            <li>-<li>
                             <li>101 John Pound Road</li>
                             <li>Tillsonburg, ON N4G 4H3</li>
                         </ul>
                     </div>
                     <div class="col-xl-auto footer-col mx-7">
                         <ul class="footer-col-ul">
-                                <li><h2>Members</h2></li>
-                                <a href="#"><li>Lessons</li></a>
-                                <a href="#"><li>Tee Times</li></a>
+                            <li><h2>Members</h2></li>
+                            <li>-<li>
+                            <a href="#"><li>Lessons</li></a>
+                            <a href="#"><li>Tee Times</li></a>
                         </ul>
                     </div>
                     <div class="col-xl-auto footer-col mx-7">
                         <ul class="footer-col-ul">
                             <li><h2>Contact Us</h2></li>
+                            <li>-<li>
                             <a href="tel:5198424142"><li>519 842 4142</li></a>
                             <a href="#"><li>Send an Email</li></a>
                         </ul>
@@ -40,6 +43,7 @@
                     <div class="col-xl-auto footer-col px-0">
                         <ul class="footer-col-ul">
                             <li><h2>Sitemap</h2></li>
+                            <li>-<li>
                             <a href="#"><li>Privacy Policy</li></a>
                             <a href="#"><li><i class="fab fa-facebook"></i></li></a>
                         </ul>

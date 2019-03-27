@@ -20,10 +20,8 @@ footer {
     }
     &-col ul {
         list-style: none;
-    }
-    &-col ul h2{
         color: $color-black;
-        margin-bottom: 1rem;
+        margin: 1rem 0 1rem;
         font-size: $default-font-size;
     }
     &-middle {
@@ -52,10 +50,6 @@ footer {
             h2 {
                 font-size: 3rem;
             }
-            ul h2 {
-                margin-bottom: 1rem;
-                font-size: 4rem;
-            }
             &.mx-6 {
                 margin-left: 0 !important;
                 margin-right: 0 !important;
@@ -66,8 +60,6 @@ footer {
 @include respond(large-phone) {
     .footer {
         &-col {
-            margin-bottom: 2rem;
-            height: 100%;
             &-ul {
                 li {
                     font-size: 2rem;
@@ -76,10 +68,6 @@ footer {
             }
             h2 {
                 font-size: 2rem;
-            }
-            ul h2 {
-                margin-bottom: 1rem;
-                font-size: 4rem;
             }
         }
     }

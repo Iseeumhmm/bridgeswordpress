@@ -15,23 +15,21 @@
 get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="leagues">
-                    <div class="hero">
-                        <img class="darken" src="<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-course.jpg" alt="The Course Banner">
-                        <div class="hero__main-green-text center-text">
-                                <h1>The Course</h1>
-                        </div>
-                    </div>
+             <!-- *****************************************  HERO BANNER  ***************************************** -->
+             <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-course.jpg');">
+                <div class="hero-title">
+                    <h1 class="font-semi-bold color-white pb-5">The Course</h1>
+                </div>
             </section>
                 <!-- ***************************************  COURSE INFO  *************************************** -->
 
             <section class="course">
                 <div class="container-fluid px-0 mx-0 mt-7">
                     <div class="row justify-content-center center-text">
-                        <div class="col-md-6 color-brown">
-                            <p>Founded in 1925, and expanded to an 18-hole, par 70 course in 2009, The Bridges at Tillsonburg offers the best of traditional course style, beautiful views and challenging gameplay.</p>
-                            <p>With well-manicured greens, elevation changes, and lush fairways lined with large trees, The Bridges at Tillsonburg has been delicately carved out of nature, straddling the Big Otter Creek, and provides spectacular views.</p>
-                            <p class="pb-6">The 4 sets of tees allow players of all skill levels to choose their challenge.</p>
+                        <div class="col-lg-6 color-brown">
+                            <p class="pb-6">Founded in 1925, and expanded to an 18-hole, par 70 course in 2009, The Bridges at Tillsonburg offers the best of traditional course style, beautiful views and challenging gameplay.<br><br>
+                            With well-manicured greens, elevation changes, and lush fairways lined with large trees, The Bridges at Tillsonburg has been delicately carved out of nature, straddling the Big Otter Creek, and provides spectacular views.<br><br>
+                            The 4 sets of tees allow players of all skill levels to choose their challenge.</p>
                         </div>
                     </div>
                  </div>
@@ -152,7 +150,7 @@ get_header();?>
 
             <section class="back-9">
                 <div class="container-fluid grid-container px-0 center-text">
-                    <p class="grid-header uppercase-text"><h1>BACK NINE</h1></p>
+                    <p class="grid-header uppercase-text pt-5"><h1>BACK NINE</h1></p>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-10.jpg">
@@ -264,7 +262,7 @@ get_header();?>
 
             <section class="course-statistics">
                 <div class="container-fluid text-center pt-6">
-                    <p class="uppercase-text"><h1>Course Statistics</h1></p>
+                    <p class="uppercase-text"><h1 class="pb-4">Course Statistics</h1></p>
                     <div class="row justify-content-center">
                         <div class="col-xs-12 col-sm-8 col-lg-6">
                             <table width="100%" class="text-left table table-borderless table-responsive-xs color-brown">
@@ -350,7 +348,7 @@ get_header();?>
                 <div class="container-fluid black-background text-center color-white">
                     <a href="#">
                         <div class="text-container">
-                            <p class="font-sans font-regular">Download our</p>
+                            <p class="font-sans color-white font-regular">Download our</p>
                             <h1 class="color-white">Scorecard</h1>
                         </div>
                     </a>

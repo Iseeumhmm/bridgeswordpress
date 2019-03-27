@@ -1,5 +1,8 @@
-.front-9, .back-9 {
+.front-9, .back-9, .course-statistics{
     font-weight: $regular;
+    h1 {
+        font-size: $large-font-size;
+    }
     .grid__inner-text {
         i  {
             font-size: 6rem;

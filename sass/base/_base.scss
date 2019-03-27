@@ -56,6 +56,9 @@ body {
         margin: 0;
     }
     p {
+        font-size: $default-font-size;
+        color: $color-brown;
+        font-weight: $regular;
         margin: 0;
         padding: 0;
     }

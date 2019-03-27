@@ -63,13 +63,13 @@ get_header();?>
                                 <p>Golf Professional</p>
                                 <div class="icons">
                                     <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 3</span> 
+                                    <i class="fas fa-phone middle"></i> <span>ext 2</span> 
                                 </div>
                             </div>
                             <div class="col-md-auto px-5">
                                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/taylor-thoonen.jpg" alt="Taylor Thoonen">
-                                <h2>Tyler Martindale</h2>
-                                <p>Golf Professional</p>
+                                <h2>Taylor Thoonen</h2>
+                                <p>Food & Beverage Manager</p>
                                 <div class="icons">
                                     <i class="far fa-envelope"></i>
                                     <i class="fas fa-phone middle"></i> <span>ext 3</span> 
@@ -77,20 +77,19 @@ get_header();?>
                             </div>
                             <div class="col-md-auto px-5">
                                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/vasco-serrador.jpg" alt="Vasco Serrador">
-                                <h2>Tyler Martindale</h2>
-                                <p>Golf Professional</p>
+                                <h2>Vasco Serrador</h2>
+                                <p>Head Chef</p>
                                 <div class="icons">
                                     <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 3</span> 
+                                    <i class="fas fa-phone middle"></i> <span>ext 4</span> 
                                 </div>
                             </div>
                             <div class="col-md-auto px-5">
                                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/shayne-tremblay.jpg" alt="Shayne Tremblay">
-                                <h2>Tyler Martindale</h2>
-                                <p>Golf Professional</p>
+                                <h2>Shayne Tremblay</h2>
+                                <p>Superintendant</p>
                                 <div class="icons">
                                     <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 3</span> 
                                 </div>
                             </div>  
                         </div>

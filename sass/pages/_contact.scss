@@ -50,9 +50,11 @@
         font-weight: 400;
         font-size: $small-font-size;
     }
+
     i.middle {
-        padding-left: 2rem;
-        margin-right: -.75rem;
+        padding-left: 1rem;
+        margin-right: -.35rem;
+        font-size: $default-font-size;
     }
     span {
         margin-bottom: 1rem;
@@ -61,7 +63,10 @@
      }
     margin-bottom: 5rem;
 }
-
+.icons {
+    font-size: $medium-font-size;
+    color: $color-brown;
+}
 .contact-form {
     padding: 5rem 0;
     background-color: #DDDDDD;
@@ -76,9 +81,9 @@
         background-color: #DDDDDD;
         border-style: solid;
         font-family: $font-sans;
-        color: $color-brown;
         font-size: $default-font-size;
-        border: 1px solid $color-brown;
+        color: $color-brown !important;
+        border: 1px solid $color-brown !important;
     }
     textarea::placeholder, input::placeholder { 
         color: $color-brown; 
@@ -86,6 +91,8 @@
     form {
         width: 30%;
         .btn {
+            background-color: #DDDDDD;
+            font-size: $default-font-size;
             padding: 0;
             margin-top: 2rem;
             border-radius: 0;

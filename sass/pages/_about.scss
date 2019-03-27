@@ -4,20 +4,13 @@
        max-height: 600px;
     }
 }
-
-.hero-banner {
-    position: relative;
-    min-height: 60rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .text-items {
       position: absolute;
       bottom: 0;
       padding-bottom: 5rem;
       &--cta {
-          width: 30rem;
+          width: 27rem;
+          padding: 2rem;
       }
   }
 
