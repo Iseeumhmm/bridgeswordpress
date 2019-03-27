@@ -17,6 +17,11 @@
     top: 50%;
     transform: translateY(-50%);
 }
+@mixin vertCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 // MEDIA QUERY MANAGER
 /*
@@ -47,8 +52,8 @@ RESPONSIVE REFRACTOR ORDER IS > base > typography > genral layout > grid > page 
         @media (max-width: 28em) { @content }; //(450px)
     }
 
-    @if $breakpoint == large-phone {
-        @media (max-width: 47.75em) { @content }; //(764px)
+    @if $breakpoint == large-phone-land {
+        @media (max-width: 43.5em) { @content }; //(764px)
     }
 
     @if $breakpoint == tab-port {

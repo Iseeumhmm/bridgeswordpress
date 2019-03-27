@@ -45,3 +45,15 @@ ul.ml-auto {
     }
 }
 
+// ********************************************  LARGE PHONE  ********************************************
+
+
+@include respond(large-phone) {
+    nav .navbar-brand {
+        margin-left: 2rem;
+    }
+    
+    ul.ml-auto {
+        margin-right: 2rem;
+    }
+}

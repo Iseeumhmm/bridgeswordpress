@@ -59,8 +59,8 @@
         &-text {
             @include horizCenter;
             h1 {
-                    font-size: 6rem;
-                    letter-spacing: 1rem;
+                font-size: 6rem;
+                letter-spacing: 1rem;
             }
             p {
                 margin: 2rem 0;
@@ -111,118 +111,123 @@
 
 // ********************************************  iPad LANDSCAPE  ********************************************
 
-// @include respond(tab-land) {
+@include respond(tab-land) {
     
-//     div.hero {
-//         &__main-text {
-//             top: 50%;
-//             transform: translate(-50%, -50%);
-//             margin-bottom: 0;
-//             h2 {
-//                 text-align: justify;
-//             }
-//         }
-//         &_container.top-tee {
-//             margin-top: -5rem;
-//         }
-//     }
-// }
+    .hero {
+        
+        &__main-text {
+            margin-bottom: 10rem;
+        }
+        &__tee {
+            &-text { 
+                top: 0;  
+                transform: translate(0);
+                margin-top: 3rem;
+            }
+        }
+    }
+}
 
 // // ********************************************  iPad PORTRAIT  ********************************************
 
 
-// @include respond(tab-port) {
-//     div.hero {
-//         &__tee {
-//             &-text {
-//                 top: 0;
-//                 transform: translate(0);
-//                 text-align: center;
-//                 margin-left: 0;
-//                 margin: 6rem 10rem;
-//                 h1 { font-size: 6rem; }
-//                 p { 
-//                     text-align: justify; 
-//                     font-size: 3rem;
-//                     padding-bottom: 2rem;
-//                 }
-//             }
-//         }
-//     }
-// }
+@include respond(tab-port) {
+    .hero {
+        &__tee {
+            .pl-7 { padding-left: 0; }
+            &-text {
+                margin-left: 0;
+            }
+        }
+        &__course {
+            &-text {
+                width: 100%;
+                &.padding-right-large {
+                    padding: 0 5rem;
+                }
+            }
+        }
+    }
+}
 
-// // ********************************************  LARGE PHONE  ********************************************
+// ***************************************  LARGE PHONE LANDSCAPE  ***************************************
+
+@include respond(large-phone-land) {
+    .grid__inner-text {
+        p { font-size: $default-font-size; }
+    }
+}
+
+// ********************************************  LARGE PHONE  ********************************************
 
 
-// @include respond(large-phone) {
-//     div.hero {
-//         &__main {
-//             &-text {
-//                 margin-bottom: -15rem;
-//                 h2 {
-//                     font-size: 2.25rem;
-//                 }
-//             }
-//             &-view {
-//                 text-align: center !important;
-//             }
-//         }
-//         &__tee {
-//             &-text {
-//                 margin-left: 0;
-//                 margin-right: 0;
-//                 padding: 0 3rem;
-//                 h1 { font-size: 2.5rem; }
-//                 p { 
-//                     text-align: justify; 
-//                     font-size: 2.25rem;
-//                 }
-//             }
-//         }
-//         &__course {
-//             &-text {
-//                 width: 100%;
-//                 padding: 0 3rem;
-//                 text-align: center;
-//                 bottom: 3rem;
-//                 left: 50%;
-//                 transform: translateX(-50%);
-//                 h1 {
-//                     font-size: 3.5rem;
-//                 }
-//                 p {
-//                     text-align: justify;
-//                 }
-//             }
-//         }
-//     }
-//     img.hero__course-img {
-//         position: absolute;
-//         right: -10rem;
-//         bottom: 0;
-//     }    
-// }
+@include respond(large-phone) {
+    .grid__inner-text {
+        p { font-size: $medium-font-size; }
+    }
+    .hero {
+        &.main-bg {
+            min-height: 80vh;
+        }
+        &.tee-bg {
+            background-position-x: right;
+            min-height: 100vh;
+        }
+        &.course-bg {
+            min-height: 100vh;
+        }
+        &__main {
+            &-text {
+                @include absCenter;
+                margin-bottom: 0;
+                h2 {
+                    text-align: justify;
+                    font-size: $medium-font-size;
+                }
+            }
+        }
+        &__tee {
+            &-text {
+                h1 { font-size: $medium-font-size; }
+                p { 
+                    float: right;
+                    font-size: $default-font-size;
+                 }
+                text-align: right;
+                padding: 0 1rem;
+            }
+            &-phone {
+                text-align: center;
+            }
+        }
+        &__course {
+            &-text {
+                text-align: center;
+                h1 { font-size: $medium-font-size; }
+            }
+        }
+
+    }
+}
 
 // // ********************************************  SMALL PHONE  ********************************************
 
 
-// @include respond(small-phone) {
-//     div.hero {
-//         &__main {
-//             &-text {
-//             margin-bottom: -10rem;
-//                 h2 {
-//                     text-align: justify;
-//                     font-size: 1.75rem;
-//                 }
-//             }
-//         }
-//         &__tee {
-//             &-text {
- 
-//             }
-//         }
-
-//     }
-// }
+@include respond(small-phone) {
+    .hero {
+        &__tee {
+            &-text {
+                padding: 0 6rem;
+                margin-top: 5rem;
+                text-align: center;
+                h1 { text-align: center; }
+                p { 
+                    float: none;
+                    clear: both; 
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 

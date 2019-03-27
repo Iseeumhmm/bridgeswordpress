@@ -16,7 +16,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <!-- ***************************************  MAIN HERO IMAGE  *************************************** -->
-            <section class="hero hero-homepage-banner" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home.jpg');">
+            <section class="hero hero-homepage-banner main-bg" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home.jpg');">
                 <div class="hero__main-text">
                     <p><h2>The Bridges offers the best of traditional course style, with beautiful views and elevation changes in 10 new holes that wind        through the Otter Valley.</h2>
                     </p>
@@ -31,23 +31,23 @@ get_header();?>
             <section>
                 <div class="container-fluid grid grid-section center-text uppercase-text">
                     <h1>Bridges Events</h1>
-                    <p">- join us or book with us -</p>
+                    <p>- join us or book with us -</p>
                     <div class="row no-margin justify-content-center grid-row">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <img class="grid" src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/food-truck.jpg" alt="Food Truck">
                             <p class="grid__inner-text ">
                                 <span class="grid__inner-food-truck--text"> Food truck night benefit</span><br><br>
                                 October 5th<br>
                                 6pm - 9pm</p>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <img class="grid grid-middle" src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/3-man-scramble.jpg" alt="3 Man Scramble">
                             <p class="grid__inner-text">
                                 <span class="grid-calendar--text"> 3-man <br>scramble</span><br><br><br>
                                 October 20th <br>
                                 10am</p>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 grid-img px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 grid-img px-0">
                             <div class="grid-view square"style="background-image: linear-gradient(rgba(204, 151, 84, .5),rgba(204, 151, 84, .5)),url(<?php echo get_template_directory_uri(); ?>/public/img/thumbs/calendar.jpg); background-size: cover; filter: brightness(65%);">
                             </div>
                             <a href="#">
@@ -58,9 +58,9 @@ get_header();?>
                     </div>
                 </div>
                 <div class="container-fluid px-0">
-                    <p class="center-text uppercase-text">- Tournament grids -</p>
+                    <p class="center-text uppercase-text">- Tournament Packages -</p>
                     <div class="row justify-content-center grid-row ">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-box grid-gold square"></div>
                             <div class="grid__inner-text">
                                 <h1>Gold Package</h1>
@@ -68,7 +68,7 @@ get_header();?>
                                 <p>Starting at $96</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-box grid-silver square"></div>
                             <div class="grid__inner-text">
                                 <h1>Silver Package</h1>
@@ -76,7 +76,7 @@ get_header();?>
                                 <p>Starting at $74</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-box grid-bronze square"></div>
                             <div class="grid__inner-text">
                                 <h1>Bronze Package</h1>
@@ -90,8 +90,8 @@ get_header();?>
             </section>
             <!-- ***************************************  TEE TIMES  *************************************** -->
             
-            <section class="hero hero-homepage-banner" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home-tee-times.jpg');">
-                <div class="hero__tee-text pl-7">
+            <section class="hero hero-homepage-banner tee-bg" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home-tee-times.jpg');">
+                <div class="hero__tee-text pl-sm-5 pl-lg-7">
                     <h1>Tim's Tee Times</h1>
                     <p>Each day we offer specially priced green fees in a limited number</p>
                     <div class="hero__tee-phone color-brown">
@@ -102,7 +102,7 @@ get_header();?>
             
             <!-- *********************************  GET TO KNOW THE COURSE  ********************************* -->
 
-            <section class="hero hero-homepage-banner" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home-courses.jpg');">
+            <section class="hero hero-homepage-banner course-bg" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home-courses.jpg');">
                 <div class="hero__course-text padding-right-large pb-7">
                     <h1>Get to know our courses from ther air!</h1>
                     <p class="pt-3 color-white">Thanks to our new drone footage, you can get aquainted with each of our courses before you try them.</p>

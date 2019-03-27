@@ -149,22 +149,9 @@ img.grid {
 
 @include respond(large-phone) {
     .grid {
-    //     &__inner {
-    //         &-text {
-    //             line-height: 4rem;
-    //             font-size: 2.5rem;
-    //             span {
-    //                 font-size: 3.5rem;
-    //             }
-    //             h1 {
-    //                 font-size: 4rem;
-    //                 margin: -3rem 0 3rem;
-    //             }
-    //             p {
-    //                 font-size: 3rem;
-    //             }
-    //         }
-    //     }
+        &-section {
+            padding: 0;
+        }
         &-calendar {
             width: 40vw;
             height: 25vw;
@@ -173,3 +160,9 @@ img.grid {
 }
 
 
+// ********************************************  SMALL PHONE  ********************************************
+
+
+@include respond(small-phone) {
+   
+}

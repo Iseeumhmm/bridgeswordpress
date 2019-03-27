@@ -36,7 +36,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo/logo.png" alt="Logo">
                     </a>
                 </div>
-                <button class="navbar-toggler mr-7" data-toggle="collapse" data-target="#navbarMenu">
+                <button class="navbar-toggler mr-md-7" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
