@@ -1,20 +1,94 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package BridgesAtTillsonburg
- */
+    /**
+     * The template for displaying all pages
+     *
+     * This is the template that displays all pages by default.
+     * Please note that this is the WordPress construct of pages
+     * and that other 'pages' on your WordPress site may use a
+     * different template.
+     *
+     * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+     *
+     * @package BridgesAtTillsonburg
+     */
 
-get_header();?>
+    //response generation function
+    $response = "";
+    
+    //function to generate response
+    function my_contact_form_generate_response($type, $message){
+    
+        global $response;
+    
+        if($type == "success") $response = "<div class='success'>{$message}</div>";
+        else $response = "<div class='error'>{$message}</div>";
+    
+    }
+     //response messages
+    $missing_content = "Please supply all information.";
+    $email_invalid   = "Email Address Invalid.";
+    $message_unsent  = "Message was not sent. Try Again.";
+    $message_sent    = "Thanks! Your message has been sent.";
+
+    //user posted variables
+    $name = $_POST['message_name'];
+    $email = $_POST['message_email'];
+    $message = $_POST['message_text'];
+    $forWho = $_POST['message_for-who'];
+    $submitted = $_POST['submitted'];
+
+    //php mailer variables
+    $to = get_option('admin_email');
+    $subject = "Message for ".$forWho." from the Bridges at Tillsonburg Website";
+    $headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+ 
+    if($submitted == "1"){
+        //validate email
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        my_contact_form_generate_response("error", $email_invalid);
+        else //email is valid
+        {
+            //validate presence of name and message
+            if(empty($name) || empty($message)){
+                my_contact_form_generate_response("error", $missing_content);
+            }
+            else //ready to go!
+            {
+                $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+                if($sent) {
+                    my_contact_form_generate_response("success", $message_sent); //message sent!
+                }
+                else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+                // header("location: ?page_id=16");
+            }
+        }
+    // }
+    }
+    else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
+?>
+<?php get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+        <style type="text/css">
+                    .error{
+                        padding: 5px 9px;
+                        border: 1px solid red;
+                        color: red;
+                        border-radius: 3px;
+                    }
+                    
+                    .success{
+                        padding: 5px 9px;
+                        border: 1px solid green;
+                        color: green;
+                        border-radius: 3px;
+                    }
+                    
+                    form span{
+                        color: red;
+                    }
+             </style>
 
         <!-- *********************************************  GOOGLE MAP  ********************************************* -->
 
@@ -102,19 +176,17 @@ get_header();?>
             <section class="contact-form">
                     <div class="center-text">
                         <h1>Send Message</h1>
+                        <div class="message"><?php echo $response; ?></div>
                     </div>
                     <div id="respond">
-                    <!-- <?php echo $response; ?> -->
-                    
-                    <!-- <form action="?page_id=16" method="post"> -->
-                    <form method="post">
-                        <p><label for="message_name"><input type="text" name="message_name" placeholder="Name" value=""></label></p>
-                        <p><label for="message_email"><input type="text" name="message_email" placeholder="Email" value=""></label></p>
-                        <p><label for="message_for-who"><input type="text" name="message_for-who" placeholder="Who's this message for?" value=""></label></p>
-                        <p><label for="message_text"><textarea type="text" name="message_text" placeholder="Message"></textarea></label></p>
-                        <input type="hidden" name="submitted" value="1">
-                        <p><input class="btn" value="Send Message" type="submit"></p>
-                    </form>
+                        <form action="#respond" method="post">
+                            <p><label for="message_name"><input type="text" name="message_name" placeholder="Name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label></p>
+                            <p><label for="message_email"><input type="text" name="message_email" placeholder="Email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
+                            <p><label for="message_for-who"><input type="text" name="message_for-who" placeholder="Who's this message for?" value="<?php echo esc_attr($_POST['message_for-who']); ?>"></label></p>
+                            <p><label for="message_text"><textarea type="text" name="message_text" placeholder="Message"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label></p>
+                            <input type="hidden" name="submitted" value="1">
+                            <p><input class="btn" value="Send Message" type="submit"></p>
+                        </form>
                     </div>
             </section>
 

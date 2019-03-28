@@ -12562,6 +12562,20 @@ footer li {
   background-color: #DDDDDD;
 }
 
+.contact-form--error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+}
+
+.contact-form--success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px;
+}
+
 .contact-form label {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -12625,6 +12639,11 @@ footer li {
   padding-top: 5rem;
   display: flex;
   justify-content: center;
+}
+
+.message {
+  display: inline-block;
+  padding-top: 3rem;
 }
 
 @media (max-width: 75em) {
