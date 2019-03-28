@@ -16,7 +16,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
              <!-- *****************************************  HERO BANNER  ***************************************** -->
-             <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-course.jpg');">
+             <section class="hero" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-course.jpg');">
                 <div class="hero-title">
                     <h1 class="font-semi-bold color-white pb-5">The Course</h1>
                 </div>
@@ -40,8 +40,8 @@ get_header();?>
                 <div class="container-fluid grid-container px-0 center-text">
                     <p class="grid-header uppercase-text"><h1>FRONT NINE</h1></p>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-1.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-1.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -51,8 +51,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-2.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-2.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -62,8 +62,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-3.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-3.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -75,8 +75,8 @@ get_header();?>
                         </div>
                     </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-4.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-4.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -86,8 +86,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-5.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-5.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -97,8 +97,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-6.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-6.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -110,8 +110,8 @@ get_header();?>
                         </div>
                         </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-7.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-7.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -121,8 +121,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-8.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-8.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -132,8 +132,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-9.jpg)">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-9.jpg)">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -152,8 +152,8 @@ get_header();?>
                 <div class="container-fluid grid-container px-0 center-text">
                     <p class="grid-header uppercase-text pt-5"><h1>BACK NINE</h1></p>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-10.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-10.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -163,8 +163,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-11.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-11.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -174,8 +174,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-12.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-12.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -187,8 +187,8 @@ get_header();?>
                         </div>
                     </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-13.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-13.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -198,8 +198,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-14.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-14.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -209,8 +209,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-15.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-15.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -222,8 +222,8 @@ get_header();?>
                         </div>
                         </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-16.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-16.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -233,8 +233,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-17.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-17.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">
@@ -244,8 +244,8 @@ get_header();?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-view square"style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-18.jpg">
+                        <div class="col-sm-4 col-md-2 px-0">
+                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-18.jpg">
                             </div>
                             <div class="greenfees-white-border">
                                 <div class="grid__inner-text">

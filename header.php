@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/css/style.css">
-    <!-- <title>Bridges at Tillsonburg</title> -->
+    <title>Bridges at Tillsonburg</title>
 	<?php wp_head(); ?>
 </head>
 
@@ -32,7 +32,7 @@
         <div class="container-fluid p-0" id="outer"></div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="logo">
-                    <a href="/bridges" class="navbar-brand">
+                    <a href="/bridges/index" class="navbar-brand">
                         <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo/logo.png" alt="Logo">
                     </a>
                 </div>
@@ -41,12 +41,30 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link px-nav-link">Book a tee</a>
-                        <a href="bridges/about" class="nav-link px-nav-link">About</a>
-                        <a href="#" class="nav-link px-nav-link">Golf</a>
-                        <a href="#" class="nav-link px-nav-link">Events</a>
-                        <a href="/bridges/contact" class="nav-link px-nav-link">Contact</a>
-                        <a href="/bridges/greenfees" class="nav-link px-nav-link">Green fees</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-nav-link">Book a tee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bridges/about" class="nav-link px-nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">Golf</a>
+                            <div class="dropdown-menu">
+                                <a href="/bridges/the-course" class="dropdown-item">The Course</a>
+                                <a href="/bridges/proshop" class="dropdown-item">The Pro Shop</a>
+                                <a href="/bridges/lessons" class="dropdown-item">Lessons</a>
+                                <a href="/bridges/league" class="dropdown-item">League</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-nav-link">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/bridges/contact" class="nav-link px-nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/bridges/greenfees" class="nav-link px-nav-link">Green fees</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

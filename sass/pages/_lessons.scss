@@ -18,3 +18,15 @@
         left: 0;
     }
 }
+
+// ***************************************  LARGE PHONE LANDSCAPE  ***************************************
+
+@include respond(large-phone-land) {
+    .lessons-clinics {
+        .gift-box {
+            h1 { font-size: $medium-font-size; }
+            p { font-size: $small-font-size; }
+        }
+    }
+    
+}

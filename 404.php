@@ -11,14 +11,11 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<section class="about">
-				<div class="hero">
-					<img class="darken" src="<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-about.jpg" alt="About Banner">
-					<div class="hero__main-green-text center-text">
-						<h1>Sorry page not found.</h1>
+			<section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-about.jpg');">
+					<div class="hero__main-text-pages">
+						<h1>Sorry that page can't be found.</h1>
 					</div>
-				</div>
-		</section>
+            </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

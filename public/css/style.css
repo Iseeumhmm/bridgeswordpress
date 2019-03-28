@@ -12721,8 +12721,6 @@ footer li {
   background-size: cover;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-filter: brightness(55%);
-          filter: brightness(55%);
 }
 
 .course-statistics table {
@@ -12778,6 +12776,16 @@ footer li {
   position: absolute;
   top: 45%;
   left: 0;
+}
+
+@media (max-width: 43.5em) {
+  .lessons-clinics .gift-box h1 {
+    font-size: 2.4rem;
+  }
+
+  .lessons-clinics .gift-box p {
+    font-size: 1.2rem;
+  }
 }
 
 .league-info p,
