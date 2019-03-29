@@ -37,16 +37,16 @@ get_header();?>
                   <div class="grid-box grid-gold square"></div>
                   <div class="grid__inner-text">
                       <h1>Riding</h1>
-                      <p>$52<p>-</p>$45</p>
-                      <p class="grid__inner-bracketed">(all day)</p>
+                      <p><?php the_field('weekend-price-riding'); ?><p>-</p><?php the_field('weekend-price-after-riding'); ?></p>
+                      <p class="grid__inner-bracketed">(<?php the_field('weekend-after-time-riding'); ?>)</p>
                   </div>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                   <div class="grid-box grid-gold square"></div>
                   <div class="grid__inner-text">
                           <h1>Walking</h1>
-                          <p>$37<p>-</p>$33</p>
-                          <p class="grid__inner-bracketed">(all day)</p>
+                          <p><?php the_field('weekend-price-walking'); ?><p>-</p><?php the_field('weekend-price-after-walking'); ?></p>
+                          <p class="grid__inner-bracketed">(<?php the_field('weekend-after-time-walking'); ?>)</p>
                   </div>
               </div>
               </div>
@@ -54,60 +54,63 @@ get_header();?>
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                       <div class="grid-box grid-black square"></div>
                       <div class="grid__inner-text">
-                          <h1>Weekday</h1>
-                          <p>18 Holes</p>
+                            <h1>Weekday</h1>
+                            <p>18 Holes</p>
                       </div>
                   </div>
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                       <div class="grid-box grid-black square"></div>
                       <div class="grid__inner-text">
-                          <h1>Riding</h1>
-                          <p>$47<p>-</p>$45</p>
+                            <h1>Riding</h1>
+                            <p><?php the_field('weekday-price-riding'); ?><p>-</p><?php the_field('weekday-price-after-riding'); ?></p>
+                            <p class="grid__inner-bracketed">(<?php the_field('weekday-after-time-riding'); ?>)</p>
                       </div>
                   </div>
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                     <div class="grid-box grid-black square"></div>
                     <div class="grid__inner-text">
-                      <h1>Walking</h1>
-                      <p>$32<p>-</p>$28</p>
+                        <h1>Walking</h1>
+                        <p><?php the_field('weekday-price-walking'); ?><p>-</p><?php the_field('weekday-price-after-walking'); ?></p>
+                        <p class="grid__inner-bracketed">(<?php the_field('weekday-after-time-walking'); ?>)</p>
                     </div>
                   </div>
               	</div>
 	            </div>
 	            <!-- ****************************************  GRID IMAGES  **************************************** -->
 	            <div class="row no-margin justify-content-center grid-row center-text">
-                <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                    <div class="grid-view square" style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php echo get_template_directory_uri(); ?>/public/img/thumbs/9-holes.jpg); background-size: cover; filter: brightness(65%);">
-                    </div>
-                    <div class="greenfees-white-border">
-                        <div class="grid__inner-text">
-                            <h1>9 Holes</h1>
-                            <p>Riding anytime<p>-</p>$30</clap>
+                    <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_1_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        </div>
+                        <div class="greenfees-white-border">
+                            <div class="grid__inner-text">
+                                <h1><?php the_field('bottom_row_1_title'); ?></h1>
+                                <p class="font-serif"><?php the_field('bottom_row_1_sub_title'); ?><p>-</p><?php the_field('bottom_row_1_price'); ?></p>
+                                <p class="grid__inner-bracketed"><?php the_field('bottom_row_1_price_description'); ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                    <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php echo get_template_directory_uri(); ?>/public/img/thumbs/senior-special.jpg); background-size: cover; filter: brightness(65%);">
-                    </div>
-                    <div class="greenfees-white-border">
-                        <div class="grid__inner-text">
-                            <h1>Thursday</h1>
-                            <p>Senior Special<p>-</p>$40</p>
-                            <p class="grid__inner-bracketed">(all day)</p>
+                    <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_2_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        </div>
+                        <div class="greenfees-white-border">
+                            <div class="grid__inner-text">
+                                <h1><?php the_field('bottom_row_2_title'); ?></h1>
+                                <p class="font-serif"><?php the_field('bottom_row_2_sub_title'); ?><p>-</p><?php the_field('bottom_row_2_price'); ?></p>
+                                <p class="grid__inner-bracketed"><?php the_field('bottom_row_2_price_description'); ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                    <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php echo get_template_directory_uri(); ?>/public/img/thumbs/after-5.jpg); background-size: cover; filter: brightness(65%);">
-                    </div>
-                    <div class="greenfees-white-border">
-                        <div class="grid__inner-text">
-                            <h1>After</h1>
-                            <p>5:00 PM<p>-</p>$2 / hole</p>
-                            <p class="grid__inner-bracketed">(includes cart)</p>
+                    <div class="col-md-4 col-lg-3 col-xl-2 px-0">
+                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_3_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        </div>
+                        <div class="greenfees-white-border">
+                            <div class="grid__inner-text">
+                                <h1><?php the_field('bottom_row_3_title'); ?></h1>
+                                <p class="font-serif"><?php the_field('bottom_row_3_sub_title'); ?><p>-</p><?php the_field('bottom_row_3_price'); ?></p>
+                                <p class="grid__inner-bracketed"><?php the_field('bottom_row_3_price_description'); ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
 	            </div>
 	            <div class="center-text font-regular mt-5">
 	                <p>All prices include HST</p>
@@ -124,48 +127,42 @@ get_header();?>
                             <h1 class="mb-0">18 Holes</h1>
                             <p class="uppercase-text font-serif">With Cart</p>
                             <p>-</p>
-                            <p class="uppercase-text font-serif">
-                                20 passes<br>
-                                $850
+                            <p class="uppercase-text font-serif"><?php the_field('18_holes_tier_1_item'); ?><br>
+                                <?php the_field('18_holes_tier_1_price'); ?>
                             </p>
-                            <p class="grid__inner-bracketed">($42.50 / round)</p>
+                            <p class="grid__inner-bracketed"><?php the_field('18_holes_tier_1_price_description'); ?></p>
                             <p>-</p>
-                            <p class="uppercase-text font-serif">
-                                40 passes<br>
-                                $1350
+                            <p class="uppercase-text font-serif"><?php the_field('18_holes_tier_2_item'); ?><br>
+                                <?php the_field('18_holes_tier_2_price'); ?>
                             </p>
-                            <p class="grid__inner-bracketed">($33.75 / round)</p>
+                            <p class="grid__inner-bracketed"><?php the_field('18_holes_tier_2_price_description'); ?></p>
                             <p>-</p>
-                            <p class="uppercase-text font-serif">
-                                60 passes<br>
-                                $1750
+                            <p class="uppercase-text font-serif"><?php the_field('18_holes_tier_3_item'); ?><br>
+                                <?php the_field('18_holes_tier_3_price'); ?>
                             </p>
-                            <p class="grid__inner-bracketed">($29.17 / round)</p>
+                            <p class="grid__inner-bracketed"><?php the_field('18_holes_tier_3_price_description'); ?></p>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-2 px-0">
                         <div class="grid-box grid-bronze rectangle"></div>
                         <div class="grid__inner-text">
-                                <h1 class="mb-0">9 Holes</h1>
-                                <p class="uppercase-text font-serif">With Cart</p>
-                                <p>-</p>
-                                <p class="uppercase-text font-serif">
-                                    20 passes<br>
-                                    $490
-                                </p>
-                                <p class="grid__inner-bracketed">($24.50 / round)</p>
-                                <p>-</p>
-                                <p class="uppercase-text font-serif">
-                                    40 passes<br>
-                                    $790
-                                </p>
-                                <p class="grid__inner-bracketed">($19.75 / round)</p>
-                                <p>-</p>
-                                <p class="uppercase-text font-serif">
-                                    60 passes<br>
-                                    $1090
-                                </p>
-                                <p class="grid__inner-bracketed">($18.17 / round)</p>
+                            <h1 class="mb-0">9 Holes</h1>
+                            <p class="uppercase-text font-serif">With Cart</p>
+                            <p>-</p>
+                            <p class="uppercase-text font-serif"><?php the_field('9_holes_tier_1_item'); ?><br>
+                            <?php the_field('9_holes_tier_1_price'); ?>
+                            </p>
+                            <p class="grid__inner-bracketed"><?php the_field('9_holes_tier_1_price_description'); ?></p>
+                            <p>-</p>
+                            <p class="uppercase-text font-serif"><?php the_field('9_holes_tier_2_item'); ?><br>
+                                <?php the_field('9_holes_tier_2_price'); ?>
+                            </p>
+                            <p class="grid__inner-bracketed"><?php the_field('9_holes_tier_2_price_description'); ?></p>
+                            <p>-</p>
+                            <p class="uppercase-text font-serif"><?php the_field('9_holes_tier_3_item'); ?><br>
+                                <?php the_field('9_holes_tier_3_price'); ?>
+                            </p>
+                            <p class="grid__inner-bracketed"><?php the_field('9_holes_tier_3_price_description'); ?></p>
                         </div>
                     </div>
                 </div>
