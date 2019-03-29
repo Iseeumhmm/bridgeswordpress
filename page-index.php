@@ -34,25 +34,47 @@ get_header();?>
                     <p>- join us or book with us -</p>
                     <div class="row no-margin justify-content-center grid-row">
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
-                            <img class="grid" src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/food-truck.jpg" alt="Food Truck">
+                            <?php 
+                                $image = get_field('row-1-box-1-image');
+                                if( !empty($image) ): 
+                                    $url = $image['url'];
+                                    $alt = $image['alt'];
+                                ?>
+                                <img class="grid" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                            <?php endif; ?>
                             <p class="grid__inner-text ">
-                                <span class="grid__inner-food-truck--text"> Food truck night benefit</span><br><br>
-                                October 5th<br>
-                                6pm - 9pm</p>
+                                <span class="grid__inner-food-truck--text"><?php the_field('row-1-box-1-title'); ?></span><br><br>
+                                <?php the_field('row-1-box-1-date'); ?><br>
+                                <?php the_field('row-1-box-1-time'); ?></p>
                         </div>
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
-                            <img class="grid grid-middle" src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/3-man-scramble.jpg" alt="3 Man Scramble">
-                            <p class="grid__inner-text">
-                                <span class="grid-calendar--text"> 3-man <br>scramble</span><br><br><br>
-                                October 20th <br>
-                                10am</p>
+                            <?php 
+                                $image = get_field('row-1-box-2-image');
+                                if( !empty($image) ): 
+                                    $url = $image['url'];
+                                    $alt = $image['alt'];
+                                ?>
+                                <img class="grid" src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                            <?php endif; ?>
+                            <p class="grid__inner-text ">
+                                <span class="grid__inner-food-truck--text"><?php the_field('row-1-box-2-title'); ?></span><br><br>
+                                <?php the_field('row-1-box-2-date'); ?><br>
+                                <?php the_field('row-1-box-2-time'); ?></p>
                         </div>
                         <div class="col-sm-4 col-lg-3 col-xl-2 grid-img px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(rgba(204, 151, 84, .5),rgba(204, 151, 84, .5)),url(<?php echo get_template_directory_uri(); ?>/public/img/thumbs/calendar.jpg); background-size: cover; filter: brightness(65%);">
-                            </div>
+                            <?php 
+                                $image = get_field('row-1-box-3-image');
+                                if( !empty($image) ): 
+                                    $url = $image['url'];
+                                    $alt = $image['alt'];
+                                ?>
+                                <div class="grid-view square"style="background-image: linear-gradient(rgba(204, 151, 84, .5),rgba(204, 151, 84, .5)),url(<?php echo $url; ?>); background-size: cover; filter: brightness(65%);">
+                                </div>
+                            <?php endif; ?>
+                            
                             <a href="#">
                                 <div class="grid-calendar">
-                                <p class="grid__inner-text">View our calendar</p>
+                                <p class="grid__inner-text"><?php the_field('row-1-box-3-text'); ?></p>
                             </a>
                         </div>
                     </div>
@@ -65,7 +87,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>Gold Package</h1>
                                 <p class="grid__inner-dash-padding">-</p>
-                                <p>Starting at $96</p>
+                                <p>Starting at <?php the_field('gold_package'); ?></p>
                             </div>
                         </div>
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
@@ -73,7 +95,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>Silver Package</h1>
                                 <p class="grid__inner-dash-padding">-</p>
-                                <p>Starting at $74</p>
+                                <p>Starting at <?php the_field('silver_package'); ?></p>
                             </div>
                         </div>
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
@@ -81,7 +103,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>Bronze Package</h1>
                                 <p class="grid__inner-dash-padding">-</p>
-                                <p>Starting at $62</p>
+                                <p>Starting at <?php the_field('bronze_package'); ?></p>
                             </div>
                         </div>
                     </div>
