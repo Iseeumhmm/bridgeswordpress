@@ -132,38 +132,87 @@
                         </div>
                         <div class="row justify-content-center center-text">
                             <div class="col-md-auto px-5 ">
-                                <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/tyler-martindale.jpg" alt="Tyler Martindale">
-                                <h2>Tyler Martindale</h2>
-                                <p>Golf Professional</p>
+                                <?php 
+                                    $image = get_field('team_member_1_of_4_image');
+                                    if( !empty($image) ): 
+                                        $url = $image['url'];
+                                        $alt = $image['alt'];
+                                    ?>
+                                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                                <?php endif; ?>
+                                <h2><?php the_field('team_member_1_of_4_name'); ?></h2>
+                                <p><?php the_field('team_member_1_of_4_title'); ?></p>
                                 <div class="icons">
-                                    <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 2</span> 
+                                    <a href="mailto: <?php the_field('team_member_1_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
+                                    <?php
+                                        $extension = get_field('team_member_4_of_4_extension');
+                                        if( !empty($extension) ):
+                                        ?>
+                                        <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_1_of_4_extension'); ?></span></a> 
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="col-md-auto px-5">
-                                <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/taylor-thoonen.jpg" alt="Taylor Thoonen">
-                                <h2>Taylor Thoonen</h2>
-                                <p>Food & Beverage Manager</p>
+                                <?php 
+                                    $image = get_field('team_member_2_of_4_image');
+                                    if( !empty($image) ): 
+                                        $url = $image['url'];
+                                        $alt = $image['alt'];
+                                    ?>
+                                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                                <?php endif; ?>
+                                <h2><?php the_field('team_member_2_of_4_name'); ?></h2>
+                                <p><?php the_field('team_member_2_of_4_title'); ?></p>
                                 <div class="icons">
-                                    <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 3</span> 
+                                    <a href="mailto: <?php the_field('team_member_2_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
+                                    <?php
+                                        $extension = get_field('team_member_4_of_4_extension');
+                                        if( !empty($extension) ):
+                                        ?>
+                                        <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_2_of_4_extension'); ?></span></a> 
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="col-md-auto px-5">
-                                <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/vasco-serrador.jpg" alt="Vasco Serrador">
-                                <h2>Vasco Serrador</h2>
-                                <p>Head Chef</p>
+                               <?php 
+                                    $image = get_field('team_member_3_of_4_image');
+                                    if( !empty($image) ): 
+                                        $url = $image['url'];
+                                        $alt = $image['alt'];
+                                    ?>
+                                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                                <?php endif; ?>
+                                <h2><?php the_field('team_member_3_of_4_name'); ?></h2>
+                                <p><?php the_field('team_member_3_of_4_title'); ?></p>
                                 <div class="icons">
-                                    <i class="far fa-envelope"></i>
-                                    <i class="fas fa-phone middle"></i> <span>ext 4</span> 
+                                    <a href="mailto: <?php the_field('team_member_3_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
+                                    <?php
+                                        $extension = get_field('team_member_4_of_4_extension');
+                                        if( !empty($extension) ):
+                                        ?>
+                                        <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_3_of_4_extension'); ?></span></a> 
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="col-md-auto px-5">
-                                <img src="<?php echo get_template_directory_uri(); ?>/public/img/staff/shayne-tremblay.jpg" alt="Shayne Tremblay">
-                                <h2>Shayne Tremblay</h2>
-                                <p>Superintendant</p>
+                                <?php 
+                                    $image = get_field('team_member_4_of_4_image');
+                                    if( !empty($image) ): 
+                                        $url = $image['url'];
+                                        $alt = $image['alt'];
+                                    ?>
+                                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" />
+                                <?php endif; ?>
+                                <h2><?php the_field('team_member_4_of_4_name'); ?></h2>
+                                <p><?php the_field('team_member_4_of_4_title'); ?></p>
                                 <div class="icons">
-                                    <i class="far fa-envelope"></i>
+                                    <a href="mailto: <?php the_field('team_member_4_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
+                                    <?php
+                                        $extension = get_field('team_member_4_of_4_extension');
+                                        if( !empty($extension) ):
+                                        ?>
+                                        <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_4_of_4_extension'); ?></span></a> 
+                                    <?php endif; ?>
                                 </div>
                             </div>  
                         </div>
