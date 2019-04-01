@@ -109,32 +109,20 @@ get_header();?>
                 <div class="container-fluid px-0 mx-0">
                     <div class="row justify-content-center">
                         <div class="col-md-2 px-0">
-                            <h2 class="pb-5">Monday Junior League*</h2>
-                            <p>Begins July 3, 2017<br>
-                                8:30 AM – 12:30 PM <br><br>
-                                Each Monday will consist of Golf, Lessons, Rules & Lunch Provided.<br><br>
-                                $99.00 (Includes 11 Sessions)<br><br>
-                                Year-End Junior Tournament<br>
-                                sponsored by: <br>
-                                Hogarth Insurance</p>
+                            <h2 class="pb-5"><?php the_field('event_1_title'); ?></h2>
+                            <p><?php the_field('event_1_body'); ?></p>
                         </div>
                         <div class="col-md-2 px-0 offset-md-1">
-                            <h2 class="pb-5">July Junior Golf Camp</h2>
-                            <p>July 24th – 27th<br><br>
-                                Mon – Thurs<br>
-                                8:30am – 12:30pm<br><br>
-                                Cost: $99.00 (four days)</p>
+                        <h2 class="pb-5"><?php the_field('event_2_title'); ?></h2>
+                            <p><?php the_field('event_2_body'); ?></p>
                         </div>
                         <div class="col-md-2 px-0 offset-md-1">
-                            <h2 class="pb-5">August Junior Golf Camp</h2>
-                            <p>August 21st – 24th<br><br>
-                                Mon – Thurs<br>
-                                8:30am – 12:30pm<br><br>
-                                Cost $99.00 (four days)</p>
+                        <h2 class="pb-5"><?php the_field('event_3_title'); ?></h2>
+                            <p><?php the_field('event_3_body'); ?></p>
                         </div>
                     </div>
                 </div>
-                <p class="py-6">*Any Holiday Monday's will be an afternoon session from 3:00 PM - 6:00 PM*</p>
+                <p class="py-6"><?php the_field('asterisk_reference'); ?></p>
             </section>
         </main><!-- #main -->
     </div><!-- #primary -->

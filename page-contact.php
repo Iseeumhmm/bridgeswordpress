@@ -145,7 +145,7 @@
                                 <div class="icons">
                                     <a href="mailto: <?php the_field('team_member_1_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
                                     <?php
-                                        $extension = get_field('team_member_4_of_4_extension');
+                                        $extension = get_field('team_member_1_of_4_extension');
                                         if( !empty($extension) ):
                                         ?>
                                         <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_1_of_4_extension'); ?></span></a> 
@@ -166,7 +166,7 @@
                                 <div class="icons">
                                     <a href="mailto: <?php the_field('team_member_2_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
                                     <?php
-                                        $extension = get_field('team_member_4_of_4_extension');
+                                        $extension = get_field('team_member_2_of_4_extension');
                                         if( !empty($extension) ):
                                         ?>
                                         <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_2_of_4_extension'); ?></span></a> 
@@ -187,7 +187,7 @@
                                 <div class="icons">
                                     <a href="mailto: <?php the_field('team_member_3_of_4_email'); ?>"<i class="far fa-envelope"></i></a>
                                     <?php
-                                        $extension = get_field('team_member_4_of_4_extension');
+                                        $extension = get_field('team_member_3_of_4_extension');
                                         if( !empty($extension) ):
                                         ?>
                                         <a href="tel:5198424142"><i class="fas fa-phone middle"></i> <span>ext <?php the_field('team_member_3_of_4_extension'); ?></span></a> 

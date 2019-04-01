@@ -28,8 +28,7 @@ get_header();?>
                 <div class="container-fluid px-0 mx-0 mt-7">
                     <div class="row justify-content-center center-text">
                         <div class="col-lg-6 color-brown">
-                            <p>The Bridges at Tillsonburg's Pro Shop is where golfers of all abilities will find all of the necessities for their round, as well as interesting golf specialty items. Our partnership with Titleist® means you have access to some of the BEST equipment in golf.<br><br>
-                            Stop in an view our great selection of golf wear, shoes, clubs and accessories.</p>
+                            <p><?php the_field('descriptive_paragraph'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -45,31 +44,30 @@ get_header();?>
                             <div class="row no-margin justify-content-center dates-times center-text">
                                 <div class="col-md-4 px-0">
                                     <div>
-                                        <div class="grid-view rectangle" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/shop/ping-grips.jpg)">
+                                        <div class="grid-view rectangle" style="background-image: url(<?php the_field('item_1_image'); ?>)">
                                         </div>
                                         <div class="greenfees-white-border"></div>
                                     </div>
-                                    <h3>PING Grips “Full Cord”</h3>
-                                    <p class="mb-5"> 8 - 11 Clubs<br>
-                                        $75 installed</p>
+                                    <h3><?php the_field('item_1_heading'); ?></h3>
+                                    <p class="mb-5"><?php the_field('item_1_body'); ?></p>
                                 </div>
                                 <div class="col-md-4 px-0">
                                     <div>
-                                        <div class="grid-view rectangle" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/shop/hat.jpg)">
-                                        </div>
-                                        <div class="greenfees-white-border"> </div>
-                                    </div>
-                                    <h3>Bridges Logo Hats</h3>
-                                    <p class="mb-5">$17.99</p>
-                                </div>
-                                <div class="col-md-4 px-0">
-                                    <div>
-                                        <div class="grid-view rectangle" style="background-image: url(<?php echo get_template_directory_uri(); ?>/public/img/shop/footjoy-shoes.jpg)">
+                                        <div class="grid-view rectangle" style="background-image: url(<?php the_field('item_2_image'); ?>)">
                                         </div>
                                         <div class="greenfees-white-border"></div>
                                     </div>
-                                    <h3>Green Footjoy Shoes</h3>
-                                    <p class="mb-5">$79.99</p>
+                                    <h3><?php the_field('item_2_heading'); ?></h3>
+                                    <p class="mb-5"><?php the_field('item_2_body'); ?></p>
+                                </div>
+                                <div class="col-md-4 px-0">
+                                    <div>
+                                        <div class="grid-view rectangle" style="background-image: url(<?php the_field('item_3_image'); ?>)">
+                                        </div>
+                                        <div class="greenfees-white-border"></div>
+                                    </div>
+                                    <h3><?php the_field('item_3_heading'); ?></h3>
+                                    <p class="mb-5"><?php the_field('item_3_body'); ?></p>
                                 </div>
                             </div>
                         </div>

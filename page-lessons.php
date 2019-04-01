@@ -40,7 +40,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>1 Session</h1>
                                 <p><p class="grid__inner-dash-padding">-</p><?php the_field('1_session_price'); ?></p>
-                                <p class="book-now">Book Now</p>
+                                <a href"#"><p class="book-now">Book Now</p></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
@@ -48,7 +48,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>3 Session</h1>
                                 <p><p class="grid__inner-dash-padding">-</p><?php the_field('3_session_price'); ?></p>
-                                <p class="book-now">Book Now</p>
+                                <a href"#"><p class="book-now">Book Now</p></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
@@ -56,7 +56,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>5 Session</h1>
                                 <p><p class="grid__inner-dash-padding">-</p><?php the_field('5_session_price'); ?></p>
-                                <p class="book-now">Book Now</p>
+                                <a href"#"><p class="book-now">Book Now</p></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
@@ -64,7 +64,7 @@ get_header();?>
                             <div class="grid__inner-text">
                                 <h1>Junior</h1>
                                 <p><p class="grid__inner-dash-padding">-</p><?php the_field('junior_lessons_price'); ?></p>
-                                <p class="book-now">Book Now</p>
+                                <a href"#"><p class="book-now">Book Now</p></a>
                             </div>
                         </div>
                     </div>
