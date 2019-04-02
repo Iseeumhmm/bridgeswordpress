@@ -16,7 +16,6 @@
         min-height: 80rem;
         background-position: top;
     }
-
     &__main {
         &-text {
             font-family: $font-serif;
@@ -42,7 +41,10 @@
                 }
             }
         }
-        &-view {
+        &-view { 
+            p:hover {
+                background-color: #998367;
+            }        
             font-family: $font-sans;
             font-weight: $regular;
             font-size: $default-font-size;
@@ -71,10 +73,17 @@
         &-phone {
             display: inline-block;
             padding: 1rem 2.5rem;
+            font-size: $default-font-size;
+            font-weight: $regular;
             text-transform: uppercase;
-            line-height: 2rem;
+            line-height: 2.7rem;
             outline: 1px solid $color-brown;
         }  
+        &-phone:hover {
+            background-color: #998367;
+            color: $color-white;
+            outline: none;
+        }
     }
     &__course {
         &-text {
@@ -101,12 +110,24 @@
                 padding: 1.5rem 2rem;
             }
         }
+        &-view:hover {
+            background-color: #998367;
+        }
+    }
+    &-events {
+        height: 100%;
+        @include vertCenter;
+        padding-top: 8rem;
     }
 }
 
 .map {
     width: 100vw;
     min-height: 60rem;
+    &-contact {
+        width: 100vw;
+        min-height: 70rem;
+    }
 }
 
 // ********************************************  iPad LANDSCAPE  ********************************************

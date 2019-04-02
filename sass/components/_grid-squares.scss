@@ -10,6 +10,11 @@
     display: block;
     padding-top: 150%;  /* initial ratio of 1:1*/
 }
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
 
 .grid {
     &-section {
@@ -38,6 +43,9 @@
             font-size: 2.4rem;
         }
     }
+    &-calendar:hover {
+        background-color: #998367;
+    }
     &-gold {
         background-color: $color-gold;
     }
@@ -57,7 +65,8 @@
             @include absCenter;
             width: 90%;
             z-index: 100;
-            font-size: 1.6rem;
+            font-size: $default-font-size;
+            line-height: 2.7rem;
             font-weight: $regular;
             margin: 0;
             p {
@@ -113,10 +122,6 @@ img.grid {
     }
     .overlay {
         height: inherit;
-    }
-    .row.no-margin {
-        margin-left: 0;
-        margin-right: 0;
     }
     img.grid {
         // border: none;

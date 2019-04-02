@@ -11934,6 +11934,14 @@ ul.ml-auto {
   margin-right: 9rem;
 }
 
+#navbarMenu a {
+  border: 1px solid #fff;
+}
+
+#navbarMenu a:hover {
+  border: 1px solid #cc9754;
+}
+
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link {
   font-size: 1.5rem;
@@ -11944,7 +11952,6 @@ ul.ml-auto {
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
   color: #7f6441 !important;
-  border: 1px solid #cc9754;
 }
 
 .navbar-toggler-icon {
@@ -11958,6 +11965,10 @@ ul.ml-auto {
 
 .logo img {
   height: 7rem;
+}
+
+.dropdown-menu a {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 75em) {
@@ -12001,6 +12012,11 @@ ul.ml-auto {
   /* initial ratio of 1:1*/
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .grid-section {
   font-weight: 400;
   line-height: 2.85rem;
@@ -12037,6 +12053,10 @@ ul.ml-auto {
   font-size: 2.4rem;
 }
 
+.grid-calendar:hover {
+  background-color: #998367;
+}
+
 .grid-gold {
   background-color: #cc9754;
 }
@@ -12062,7 +12082,8 @@ ul.ml-auto {
           transform: translate(-50%, -50%);
   width: 90%;
   z-index: 100;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   font-weight: 400;
   margin: 0;
 }
@@ -12123,11 +12144,6 @@ img.grid {
     height: inherit;
   }
 
-  .row.no-margin {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   img.grid {
     width: 100%;
     height: 100%;
@@ -12165,17 +12181,13 @@ img.grid {
 }
 
 footer {
-  margin-top: 3rem;
+  height: 100%;
+  margin: 8rem 0;
   font-weight: 400;
 }
 
 footer li {
   color: #7f6441;
-}
-
-.footer-container {
-  left: 1.5rem;
-  margin-bottom: 4rem;
 }
 
 .footer-col {
@@ -12188,7 +12200,11 @@ footer li {
   list-style: none;
   color: #1a1a1a;
   margin: 1rem 0 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.footer-col ul h2 {
+  font-size: 1.6rem;
 }
 
 .footer-middle {
@@ -12303,6 +12319,10 @@ footer li {
   margin-top: 3rem;
 }
 
+.hero__main-view p:hover {
+  background-color: #998367;
+}
+
 .hero__main-view--text {
   padding: 1rem 2.5rem;
 }
@@ -12328,9 +12348,17 @@ footer li {
 .hero__tee-phone {
   display: inline-block;
   padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-transform: uppercase;
-  line-height: 2rem;
+  line-height: 2.7rem;
   outline: 1px solid #7f6441;
+}
+
+.hero__tee-phone:hover {
+  background-color: #998367;
+  color: #fff;
+  outline: none;
 }
 
 .hero__course-text {
@@ -12362,9 +12390,27 @@ footer li {
   padding: 1.5rem 2rem;
 }
 
+.hero__course-view:hover {
+  background-color: #998367;
+}
+
+.hero-events {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 8rem;
+}
+
 .map {
   width: 100vw;
   min-height: 60rem;
+}
+
+.map-contact {
+  width: 100vw;
+  min-height: 70rem;
 }
 
 @media (max-width: 75em) {
@@ -12531,13 +12577,17 @@ footer li {
 }
 
 .team h2 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 3rem;
 }
 
 .team p {
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.team .description {
+  font-size: 1.8rem;
 }
 
 .team i.middle {
@@ -12558,8 +12608,8 @@ footer li {
 }
 
 .contact-form {
-  padding: 5rem 0;
-  background-color: #DDDDDD;
+  padding: 10rem 0;
+  background-color: #f4f4f4;
 }
 
 .contact-form--error {
@@ -12589,7 +12639,7 @@ footer li {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  background-color: #DDDDDD;
+  background-color: #f4f4f4;
   border-style: solid;
   font-family: "Work Sans", sans-serif;
   font-size: 1.8rem;
@@ -12626,7 +12676,7 @@ footer li {
 }
 
 .contact-form form .btn {
-  background-color: #DDDDDD;
+  background-color: #f4f4f4;
   font-size: 1.8rem;
   padding: 0;
   margin-top: 2rem;
@@ -12744,6 +12794,7 @@ footer li {
 
 .course-statistics table {
   background-color: #FFFAF1;
+  font-size: 1.8rem;
 }
 
 .download-pdf {

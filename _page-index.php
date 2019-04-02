@@ -20,7 +20,7 @@ get_header();?>
                 <div class="hero__main-text">
                     <p><h2>The Bridges offers the best of traditional course style, with beautiful views and elevation changes in 10 new holes that wind through the Otter Valley.</h2>
                     </p>
-                    <a href="/bridges/greenfees">
+                    <a href="/greenfees">
                         <div class="hero__main-view">
                             <p class="hero__main-view--text color-white">view our rates</p>
                         </div>
@@ -32,7 +32,7 @@ get_header();?>
                 <div class="container-fluid grid grid-section center-text uppercase-text">
                     <h1>Bridges Events</h1>
                     <p>- join us or book with us -</p>
-                    <div class="row justify-content-center mx-0 grid-row">
+                    <div class="row no-margin justify-content-center grid-row">
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <?php 
                                 $image = get_field('row-1-box-1-image');
@@ -72,7 +72,7 @@ get_header();?>
                                 </div>
                             <?php endif; ?>
                             
-                            <a href="/bridges/events">
+                            <a href="/events">
                                 <div class="grid-calendar">
                                 <p class="grid__inner-text"><?php the_field('row-1-box-3-text'); ?></p>
                             </a>
@@ -81,7 +81,7 @@ get_header();?>
                 </div>
                 <div class="container-fluid px-0">
                     <p class="center-text uppercase-text">- Tournament Packages -</p>
-                    <div class="row justify-content-center grid-row mx-0">
+                    <div class="row justify-content-center grid-row ">
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-box grid-gold square"></div>
                             <div class="grid__inner-text">
@@ -128,7 +128,7 @@ get_header();?>
                 <div class="hero__course-text padding-right-large pb-7">
                     <h1>Get to know our courses from ther air!</h1>
                     <p class="pt-3 color-white">Thanks to our new drone footage, you can get aquainted with each of our courses before you try them.</p>
-                        <a href="/bridges/the-course">
+                        <a href="/the-course">
                             <div class="hero__course-view">
                                 <p class="hero__course-view--text color-white">view courses</p>
                             </div>

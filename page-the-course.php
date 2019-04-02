@@ -346,7 +346,7 @@ get_header();?>
                 <!-- ******************************************  DOWNLOAD SCORECARD  ****************************************** -->
             <section class="download-pdf py-7">
                 <div class="container-fluid black-background text-center color-white">
-                    <a href="#">
+                    <a href="<?php the_field('score_card'); ?>">
                         <div class="text-container">
                             <p class="font-sans color-white font-regular">Download our</p>
                             <h1 class="color-white">Scorecard</h1>

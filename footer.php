@@ -14,9 +14,9 @@
 	</div><!-- #content -->
 
 	<footer>
-            <div class="container-fluid px-0 mx-0">
+            <div class="container">
                 <div class="row justify-content-center footer-container">
-                    <div class="col-xl-auto footer-col px-0">
+                    <div class="col-xl-auto footer-col">
                         <ul class="footer-col-ul">
                             <li><h2>The Bridges at Tillsonburg</h2></li>
                             <li>-<li>
@@ -28,8 +28,8 @@
                         <ul class="footer-col-ul">
                             <li><h2>Members</h2></li>
                             <li>-<li>
-                            <a href="#"><li>Lessons</li></a>
-                            <a href="#"><li>Tee Times</li></a>
+                            <a href="/lessons"><li>Lessons</li></a>
+                            <a href="/book-a-tee"><li>Tee Times</li></a>
                         </ul>
                     </div>
                     <div class="col-xl-auto footer-col mx-7">

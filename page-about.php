@@ -53,7 +53,7 @@ get_header();?>
 
             <section class="hero mt-7" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
                 <div class="container-fluid pb-7 color-white font-regular text-center">
-                    <div class="d-flex row align-text-top mx-0 justify-content-center">
+                    <div class="d-flex row align-text-top justify-content-center">
                         <div class="text-items col-lg-6 align-self-end">
                             <h1 class="font-semi-bold color-white pb-5">Pro Shop</h1>
                             <p class="font-sans font-regular color-white">The Bridges at Tillsonburg's Pro Shop is where golfers of all abilities will find all of the necessities for their round, as well as interesting golf specialty items.</p>
@@ -75,7 +75,7 @@ get_header();?>
                     </div>
                     <div class="row justify-content-center center-text">
                         <div class="col-md-6">
-                            <p class="pb-6"><?php the_field('our_team_description'); ?></p>
+                            <p class="description pb-6"><?php the_field('our_team_description'); ?></p>
                         </div>
                     </div>
                     <div class="row justify-content-center center-text">
@@ -132,7 +132,7 @@ get_header();?>
             </section>
                 <!-- ****************************************  CARROLL TRAIL IMAGE  **************************************** -->
 
-            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg');">
+            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg'); background-attachment: fixed;">
                 <div class="container-fluid pb-7 color-white font-regular">
                     <h1 class="text-center pt-7 pb-5 color-white">The Carroll Trail</h1>
                     <div class="row carroll-trail align-text-top justify-content-center">

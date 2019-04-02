@@ -7,6 +7,16 @@ nav .navbar-brand {
 ul.ml-auto {
     margin-right: 9rem;
 }
+
+#navbarMenu {
+    a {
+        border: 1px solid $color-white;
+    }
+    a:hover {
+        border: 1px solid $color-gold;
+    }
+}
+
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link{
     font-size: 1.5rem;
     font-weight: 400;
@@ -14,7 +24,6 @@ ul.ml-auto {
 }
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
     color: $color-brown !important;
-    border: 1px solid $color-gold;
 }
 
 .navbar-toggler-icon{
@@ -28,6 +37,12 @@ ul.ml-auto {
 
 .logo img {
     height: 7rem;
+}
+
+.dropdown-menu {
+    a {
+        font-size: 1.5rem;
+    }
 }
 
 @include respond(tab-land) {

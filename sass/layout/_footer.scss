@@ -1,5 +1,6 @@
 footer {
-    margin-top: 3rem;
+    height: 100%;
+    margin: 8rem 0;
     font-weight: 400;
     li {
         color: $color-brown;
@@ -8,21 +9,18 @@ footer {
 
 .footer {
     &-container {
-    left: 1.5rem;
-    // border: 3px solid red;
-    margin-bottom: 4rem;
     }
     &-col {
         display: flex;
         justify-content: center;
         height: 10rem;
-        // border: 3px dotted blue;
     }
     &-col ul {
+        h2 { font-size: 1.6rem; }
         list-style: none;
         color: $color-black;
         margin: 1rem 0 1rem;
-        font-size: $default-font-size;
+        font-size: 1.6rem;
     }
     &-middle {
         padding: 0 5rem;
@@ -34,13 +32,11 @@ footer {
         &-container {
             text-align: center;
             left: 0;
-            // border: 3px solid red;
             margin-bottom: 4rem;
         }
         &-col {
             margin-bottom: 2rem;
             height: 100%;
-            // border: 3px dotted blue;
             &-ul {
                 li {
                     font-size: 3rem;
