@@ -12219,11 +12219,11 @@ footer li {
   }
 
   .footer-col ul {
-    font-size: 0.2rem;
+    font-size: 1.2rem;
   }
 
   .footer-col ul h2 {
-    font-size: 0.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -12236,14 +12236,6 @@ footer li {
   .footer-col.mx-6 {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-
-  .footer-col ul {
-    font-size: 0.2rem;
-  }
-
-  .footer-col ul h2 {
-    font-size: 0.2rem;
   }
 }
 
@@ -12456,6 +12448,10 @@ footer li {
   .grid__inner-text p {
     font-size: 1.8rem;
   }
+
+  .hero__main-text h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 28em) {
@@ -12476,18 +12472,8 @@ footer li {
     min-height: 100vh;
   }
 
-  .hero__main-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin-bottom: 0;
-  }
-
   .hero__main-text h2 {
     text-align: justify;
-    font-size: 2.4rem;
   }
 
   .hero__tee-text {
@@ -12755,6 +12741,10 @@ footer li {
   max-height: 600px;
 }
 
+.hero-carroll {
+  background-attachment: fixed;
+}
+
 .text-items {
   position: absolute;
   bottom: 0;
@@ -12767,12 +12757,67 @@ footer li {
 }
 
 @media (max-width: 75em) {
+  .hero-carroll {
+    background-attachment: unset;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .contact-logo {
+    margin-bottom: 5rem;
+  }
+
+  .contact__info--contact-us h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact__info--contact-us p {
+    font-size: 1.2rem;
+  }
+
   .carroll-trail .col-lg-4.pl-6 {
     padding: 0 3rem !important;
   }
 
   .carroll-trail .col-lg-4.pr-6 {
     padding: 0 3rem !important;
+  }
+}
+
+@media (max-width: 62em) {
+  .alternating-col {
+    flex-direction: column-reverse;
+  }
+
+  .contact-clubhouse {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 28em) {
+  .contact__info--contact-us {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .hero-carroll h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-carroll p {
+    font-size: 1.2rem;
+  }
+
+  .team h1 {
+    font-size: 2.4rem;
+  }
+
+  .team .description {
+    font-size: 1.2rem;
+  }
+
+  .team .member {
+    padding-bottom: 3rem;
   }
 }
 

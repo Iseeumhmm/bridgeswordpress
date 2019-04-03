@@ -4,6 +4,9 @@
        max-height: 600px;
     }
 }
+.hero-carroll {
+    background-attachment: fixed;
+}
   .text-items {
       position: absolute;
       bottom: 0;
@@ -13,15 +16,62 @@
           padding: 2rem;
       }
   }
+  
+  // ********************************************  RESPONSIVE  *********************************************
 
-  // ********************************************  iPAD PORTRAIT (992px)  *********************************************
 @include respond(tab-land) {
+    .hero-carroll {
+        background-attachment: unset;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .contact {
+        &-logo {
+            margin-bottom: 5rem;
+        }
+        &__info--contact-us {
+            h1 { font-size: $medium-font-size; }
+            p { font-size: $small-font-size; }
+        }
+    }
     .carroll-trail {
         .col-lg-4.pl-6 {
             padding: 0 3rem !important;
         }
         .col-lg-4.pr-6 {
             padding: 0 3rem !important;
+        }
+    }
+}
+
+@include respond(tab-port) {
+    .alternating {
+        &-col {
+            flex-direction: column-reverse;
+        }
+    }
+    .contact-clubhouse {
+        padding-bottom: 5rem;
+    }
+}
+
+
+@include respond(large-phone) {
+    .contact__info--contact-us {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .hero-carroll {
+        h1 { font-size: $medium-font-size; }
+        p { font-size: $small-font-size; }
+    }
+    .team {
+        h1 { font-size: $medium-font-size; }
+        .description {
+            font-size: $small-font-size; 
+        }
+        .member {
+            padding-bottom: 3rem;
         }
     }
 }

@@ -177,6 +177,13 @@
     .grid__inner-text {
         p { font-size: $default-font-size; }
     }
+    .hero {
+        &__main {
+            &-text {
+                h2 { font-size: $default-font-size; }
+            }
+        }
+    }
 }
 
 // ********************************************  LARGE PHONE  ********************************************
@@ -199,11 +206,8 @@
         }
         &__main {
             &-text {
-                @include absCenter;
-                margin-bottom: 0;
                 h2 {
                     text-align: justify;
-                    font-size: $medium-font-size;
                 }
             }
         }

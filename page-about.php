@@ -22,21 +22,21 @@ get_header();?>
             </section>
             <!-- ****************************************  ALTERNATING IMAGES  **************************************** -->
 
-            <section>
+            <section class="alternating">
                 <div class="container-fluid px-0 mx-0 mt-7">
                     <div class="row">
                         <div class="col-lg-6 px-0">
                             <img class="contact-logo darken"src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/clubhouse.jpg" alt="Club House">
                         </div>
-                        <div class="d-flex col-lg-6 px-0">
+                        <div class="d-flex col-lg-6 mt-xl-7 px-0">
                             <div class="contact__info--contact-us align-self-center pl-7 pr-8">
                                 <h1 class="text-capitalize">The Clubhouse</h1>
                                 <p>We want everyone to feel right at home here at The Bridges. Our warm and cozy clubhouse is the perfect spot to call your second home. Join us for great dining, a refreshing drink or just to say hello as the doors are always open and someone is sure to be here with a smile on their face. <p>
-                                <p class="mt-5">After your round of golf or dining experience, enjoy a beverage and a meal on Tillsonburg’s largest patio, surrounded by nature. Our friendly and accommodating staff will ensure your time off the course is as enjoyable as the time you spend on the course.</p>
+                                <p class="mt-5 contact-clubhouse">After your round of golf or dining experience, enjoy a beverage and a meal on Tillsonburg’s largest patio, surrounded by nature. Our friendly and accommodating staff will ensure your time off the course is as enjoyable as the time you spend on the course.</p>
                             </div>
                         </div>
-                    <div class="row mt-7">
-                        <div class="d-flex col-lg-6 px-0">
+                    <div class="row alternating-col mt-xl-7">
+                        <div class="d-flex col-lg-6 mt-xl-7 px-0">
                             <div class="contact__info--contact-us align-self-center pl-7 pb-6 pr-8">
                                 <h1 class="text-capitalize">Mulligans Place</h1>
                                 <p>Mulligans is the perfect place to grab a bite before your game, meet with family, colleagues and friends, or simply relax after a round of golf. Chef Vasco Serrador operates our newly redesigned pub, overseeing an inspired menu of clubhouse classics with locally sourced ingredients.</p>
@@ -51,7 +51,7 @@ get_header();?>
 
                 <!-- ****************************************  PRO SHOP IMAGE  **************************************** -->
 
-            <section class="hero mt-7" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
+            <section class="hero mt-xl-7" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
                 <div class="container-fluid pb-7 color-white font-regular text-center">
                     <div class="d-flex row align-text-top justify-content-center">
                         <div class="text-items col-lg-6 align-self-end">
@@ -79,7 +79,7 @@ get_header();?>
                         </div>
                     </div>
                     <div class="row justify-content-center center-text">
-                        <div class="col-md-auto px-5">
+                        <div class="member col-sm-3 col-md-auto px-5">
                             <?php 
                                 $image = get_field('team_member_1_of_4_image');
                                 if( !empty($image) ): 
@@ -91,7 +91,7 @@ get_header();?>
                             <h2><?php the_field('team_member_1_of_4_name'); ?></h2>
                             <p><?php the_field('team_member_1_of_4_title'); ?></p>
                         </div>
-                        <div class="col-md-auto px-5">
+                        <div class="member col-sm-3 col-md-auto px-5">
                             <?php 
                                 $image = get_field('team_member_2_of_4_image');
                                 if( !empty($image) ): 
@@ -103,7 +103,7 @@ get_header();?>
                             <h2><?php the_field('team_member_2_of_4_name'); ?></h2>
                             <p><?php the_field('team_member_2_of_4_title'); ?></p>
                         </div>
-                        <div class="col-md-auto px-5">
+                        <div class="member col-sm-3 col-md-auto px-5">
                             <?php 
                                 $image = get_field('team_member_3_of_4_image');
                                 if( !empty($image) ): 
@@ -115,7 +115,7 @@ get_header();?>
                             <h2><?php the_field('team_member_3_of_4_name'); ?></h2>
                             <p><?php the_field('team_member_3_of_4_title'); ?></p>
                         </div>
-                        <div class="col-md-auto px-5">
+                        <div class="member col-sm-3 col-md-auto px-5">
                             <?php 
                                 $image = get_field('team_member_4_of_4_image');
                                 if( !empty($image) ): 
@@ -132,7 +132,7 @@ get_header();?>
             </section>
                 <!-- ****************************************  CARROLL TRAIL IMAGE  **************************************** -->
 
-            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg'); background-attachment: fixed;">
+            <section class="hero hero-carroll" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg');">
                 <div class="container-fluid pb-7 color-white font-regular">
                     <h1 class="text-center pt-7 pb-5 color-white">The Carroll Trail</h1>
                     <div class="row carroll-trail align-text-top justify-content-center">
