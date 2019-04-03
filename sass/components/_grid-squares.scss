@@ -5,6 +5,7 @@
     display: block;
     padding-top: 100%;  /* initial ratio of 1:1*/
 }
+
 .rectangle:before{
     content: "";
     display: block;
@@ -23,7 +24,8 @@
         padding: 5rem 0;
     }
     &-box {
-        border: .75rem solid $color-white;
+        outline: 1.25rem solid $color-white;
+        outline-offset: -5px;
         height: 100%;
     }
     &-img {

@@ -32,7 +32,7 @@ get_header();?>
                 <div class="container-fluid grid grid-section center-text uppercase-text">
                     <h1>Bridges Events</h1>
                     <p>- join us or book with us -</p>
-                    <div class="row no-margin justify-content-center grid-row">
+                    <div class="row justify-content-center mx-0 grid-row">
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <?php 
                                 $image = get_field('row-1-box-1-image');
@@ -81,7 +81,7 @@ get_header();?>
                 </div>
                 <div class="container-fluid px-0">
                     <p class="center-text uppercase-text">- Tournament Packages -</p>
-                    <div class="row justify-content-center grid-row ">
+                    <div class="row justify-content-center grid-row mx-0">
                         <div class="col-sm-4 col-lg-3 col-xl-2 px-0">
                             <div class="grid-box grid-gold square"></div>
                             <div class="grid__inner-text">

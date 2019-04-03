@@ -60,7 +60,6 @@
                     my_contact_form_generate_response("success", $message_sent); //message sent!
                 }
                 else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
-                // header("location: ?page_id=16");
             }
         }
     // }

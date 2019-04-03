@@ -15,6 +15,9 @@
 }
 
 .course-statistics {
+    .table-container {
+        overflow: scroll;
+    }
     table {
         background-color: #FFFAF1;
         font-size: $default-font-size;
@@ -36,5 +39,20 @@
     }
     .text-container {
          @include absCenter;
+    }
+}
+// **********************************************  RESPONSIVE LAYOUT  ***********************************************
+
+@include respond(large-phone) {
+    .course-statistics {
+        h1 { font-size: $default-font-size; }
+    }
+    .download-pdf {
+        h1 {
+            font-size: $medium-font-size;
+        }
+        p {
+            font-size: $small-font-size;
+        }
     }
 }

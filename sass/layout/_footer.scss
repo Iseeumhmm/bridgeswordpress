@@ -26,45 +26,44 @@ footer {
         padding: 0 5rem;
     }
 }
+// **********************************************  RESPONSIVE LAYOUT  ***********************************************
 
 @include respond(tab-land) {
     .footer {
         &-container {
             text-align: center;
             left: 0;
-            margin-bottom: 4rem;
         }
+        &-col ul{
+            h2 { font-size: .2rem; }
+            font-size: .2rem;
+        }
+    }
+}
+@include respond(large-phone-land) {
+    .footer {
         &-col {
             margin-bottom: 2rem;
             height: 100%;
-            &-ul {
-                li {
-                    font-size: 3rem;
-                    line-height: 4.5rem;
-                }
-            }
-            h2 {
-                font-size: 3rem;
-            }
             &.mx-6 {
                 margin-left: 0 !important;
                 margin-right: 0 !important;
             }
         }
+        &-col ul{
+            h2 { font-size: .2rem; }
+            font-size: .2rem;
+        }
     }
 }
+
 @include respond(large-phone) {
+    footer {
+        margin: 3rem 0;
+    }
     .footer {
         &-col {
-            &-ul {
-                li {
-                    font-size: 2rem;
-                    line-height: 4.5rem;
-                }
-            }
-            h2 {
-                font-size: 2rem;
-            }
+            border: 1px solid $color-brown;
         }
     }
 }

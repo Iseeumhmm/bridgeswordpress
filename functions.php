@@ -81,6 +81,22 @@ if ( ! function_exists( 'bridgesattillsonburg_setup' ) ) :
 		) );
 	}
 endif;
+
+// ********************************************  ACF PRO OPTIONS  ********************************************
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Footer Settings',
+		'menu_title'	=> 'Footer Fields',
+		'menu_slug' 	=> 'footer-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}
+
+
 add_action( 'after_setup_theme', 'bridgesattillsonburg_setup' );
 
 /**

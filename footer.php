@@ -14,9 +14,9 @@
 	</div><!-- #content -->
 
 	<footer>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center footer-container">
-                    <div class="col-xl-auto footer-col">
+                    <div class="col-sm-auto footer-col">
                         <ul class="footer-col-ul">
                             <li><h2>The Bridges at Tillsonburg</h2></li>
                             <li>-<li>
@@ -24,7 +24,7 @@
                             <li>Tillsonburg, ON N4G 4H3</li>
                         </ul>
                     </div>
-                    <div class="col-xl-auto footer-col mx-7">
+                    <div class="col-sm-auto footer-col mx-md-5 mx-lg-6 mx-xl-7">
                         <ul class="footer-col-ul">
                             <li><h2>Members</h2></li>
                             <li>-<li>
@@ -32,20 +32,20 @@
                             <a href="/book-a-tee"><li>Tee Times</li></a>
                         </ul>
                     </div>
-                    <div class="col-xl-auto footer-col mx-7">
+                    <div class="col-sm-auto footer-col mx-md-5 mx-lg-6 mx-xl-7">
                         <ul class="footer-col-ul">
                             <li><h2>Contact Us</h2></li>
                             <li>-<li>
                             <a href="tel:5198424142"><li>519 842 4142</li></a>
-                            <a href="#"><li>Send an Email</li></a>
+                            <a href="mailto: <?php the_field('email', 'option'); ?>"><li>Send an Email</li></a>
                         </ul>
                     </div>
-                    <div class="col-xl-auto footer-col px-0">
+                    <div class="col-sm-auto footer-col px-0">
                         <ul class="footer-col-ul">
                             <li><h2>Sitemap</h2></li>
                             <li>-<li>
                             <a href="#"><li>Privacy Policy</li></a>
-                            <a href="#"><li><i class="fab fa-facebook"></i></li></a>
+                            <a href="<?php the_field('facebook_url', 'option'); ?>"><li><i class="fab fa-facebook"></i></li></a>
                         </ul>
                     </div>
                 </div>
