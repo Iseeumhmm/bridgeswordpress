@@ -18,7 +18,7 @@ get_header();?>
             <!-- *****************************************  HERO BANNER  ***************************************** -->
             <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .6)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-green-fees.jpg');">
                 <div class="hero-title">
-                    <h1 class="font-semi-bold color-white pb-5">Green Fees</h1>
+                    <h1 class="font-semi-bold color-white">Green Fees</h1>
                 </div>
             </section>
 	        <!-- ******************************************  FEES SECTION  ****************************************** -->
@@ -27,14 +27,14 @@ get_header();?>
               <p class="grid-header uppercase-text mt-7"><h1>2019 Green Fees Rates</h1></p>
               <div class="row justify-content-center grid-row mt-6">
               <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                  <div class="grid-box grid-gold square"></div>
+                  <div class="grid-box grid-gold square-holes"></div>
                   <div class="grid__inner-text">
                       <h1>Weekend</h1>
                       <p>18 Holes</p>
                   </div>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                  <div class="grid-box grid-gold square"></div>
+                  <div class="grid-box grid-gold square-holes"></div>
                   <div class="grid__inner-text">
                       <h1>Riding</h1>
                       <p><?php the_field('weekend-price-riding'); ?><p>-</p><?php the_field('weekend-price-after-riding'); ?></p>
@@ -42,7 +42,7 @@ get_header();?>
                   </div>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                  <div class="grid-box grid-gold square"></div>
+                  <div class="grid-box grid-gold square-holes"></div>
                   <div class="grid__inner-text">
                           <h1>Walking</h1>
                           <p><?php the_field('weekend-price-walking'); ?><p>-</p><?php the_field('weekend-price-after-walking'); ?></p>
@@ -52,14 +52,14 @@ get_header();?>
               </div>
               <div class="row justify-content-center grid-row center-text">
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                      <div class="grid-box grid-black square"></div>
+                      <div class="grid-box grid-black square-holes"></div>
                       <div class="grid__inner-text">
                             <h1>Weekday</h1>
                             <p>18 Holes</p>
                       </div>
                   </div>
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                      <div class="grid-box grid-black square"></div>
+                      <div class="grid-box grid-black square-holes"></div>
                       <div class="grid__inner-text">
                             <h1>Riding</h1>
                             <p><?php the_field('weekday-price-riding'); ?><p>-</p><?php the_field('weekday-price-after-riding'); ?></p>
@@ -67,7 +67,7 @@ get_header();?>
                       </div>
                   </div>
                   <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                    <div class="grid-box grid-black square"></div>
+                    <div class="grid-box grid-black square-holes"></div>
                     <div class="grid__inner-text">
                         <h1>Walking</h1>
                         <p><?php the_field('weekday-price-walking'); ?><p>-</p><?php the_field('weekday-price-after-walking'); ?></p>
@@ -79,7 +79,7 @@ get_header();?>
 	            <!-- ****************************************  GRID IMAGES  **************************************** -->
 	            <div class="row no-margin justify-content-center grid-row center-text">
                     <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_1_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        <div class="grid-view square-holes"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_1_image'); ?>); background-size: cover; filter: brightness(75%);">
                         </div>
                         <div class="greenfees-white-border">
                             <div class="grid__inner-text">
@@ -90,7 +90,7 @@ get_header();?>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_2_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        <div class="grid-view square-holes"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_2_image'); ?>); background-size: cover; filter: brightness(75%);">
                         </div>
                         <div class="greenfees-white-border">
                             <div class="grid__inner-text">
@@ -101,7 +101,7 @@ get_header();?>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-2 px-0">
-                        <div class="grid-view square"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_3_image'); ?>); background-size: cover; filter: brightness(75%);">
+                        <div class="grid-view square-holes"style="background-image: linear-gradient(rgba(0,0,0, .6),rgba(0,0,0, .6)),url(<?php the_field('bottom_row_3_image'); ?>); background-size: cover; filter: brightness(75%);">
                         </div>
                         <div class="greenfees-white-border">
                             <div class="grid__inner-text">
@@ -117,7 +117,7 @@ get_header();?>
 	            </div>
 	        </section>
 	        <!-- ***************************************  GREEN FEE PACKAGES  *************************************** -->
-	        <section>
+	        <section class="greenfees-packages">
             <div class="container-fluid grid-container px-0 center-text">
                 <p class="grid-header uppercase-text mt-7"><h1>Green Fee Packages</h1></p>
                 <div class="row justify-content-center grid-row center-text mt-6">

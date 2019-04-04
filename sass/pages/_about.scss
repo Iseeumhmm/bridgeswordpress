@@ -57,13 +57,30 @@
 
 
 @include respond(large-phone) {
+    .text-items {
+        position: relative !important;
+        padding: 100px 5px !important;
+    }
+    .container-fluid.about {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-left.pr-lg-6 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .text-left.pl-lg-6 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
     .contact__info--contact-us {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
     .hero-carroll {
-        h1 { font-size: $medium-font-size; }
+        h1 { font-size: $medium-font-size; padding-bottom: 3rem;}
         p { font-size: $small-font-size; }
+        padding: 100px 5px;
     }
     .team {
         h1 { font-size: $medium-font-size; }

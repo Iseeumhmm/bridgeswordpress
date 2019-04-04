@@ -17,7 +17,7 @@ get_header();?>
 		<main id="main" class="site-main">
 
             <!-- ***************************************  EVENTS IFRAME  *************************************** -->
-            <div class="hero"> 
+            <div class="hero-home"> 
                 <iframe class="hero-events"src="https://calendar.google.com/calendar/embed?src=thebridgesattillsonburg.com_l685cs6fh4652b99btcu5315lg%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="740" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
             

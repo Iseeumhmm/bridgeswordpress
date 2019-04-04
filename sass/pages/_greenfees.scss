@@ -18,3 +18,13 @@
         outline-offset: -5px;
     }
 } 
+
+  // ********************************************  RESPONSIVE  *********************************************
+
+
+@include respond(large-phone) {
+    .greenfees, .greenfees-packages {
+        h1 { font-size: $medium-font-size; }
+    }
+
+}

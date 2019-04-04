@@ -13,6 +13,23 @@
         transform: rotate(90deg);
     }
 }
+.front-9, .back-9 {
+    .grid__inner-text {
+        position: relative;
+    }
+    .course-squares {
+        position: relative;
+        background:  linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .4));
+        &-img {
+            position: absolute; 
+            top:0; 
+            left: 0; 
+            height: 100%; 
+            object-fit: cover; 
+            z-index: -1;
+        }
+    }
+}
 
 .course-statistics {
     .table-container {
@@ -42,6 +59,34 @@
     }
 }
 // **********************************************  RESPONSIVE LAYOUT  ***********************************************
+
+@media (max-width: 570px) {
+    
+    .front-9, .back-9 {
+        .greenfees-white-border {
+            position: relative;
+        }
+        .grid__inner-text {
+            height: auto;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            padding: 50px 5px;
+        }
+        .course-squares {
+            &-img {
+                position: absolute; 
+                top:0; 
+                left: 0; 
+                width: 100%; 
+                object-fit: cover; 
+                z-index: -1;
+            }
+        }
+    }
+
+}
 
 @include respond(large-phone) {
     .course-statistics {

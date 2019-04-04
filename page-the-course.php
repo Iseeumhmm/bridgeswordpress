@@ -18,7 +18,7 @@ get_header();?>
              <!-- *****************************************  HERO BANNER  ***************************************** -->
              <section class="hero" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-course.jpg');">
                 <div class="hero-title">
-                    <h1 class="font-semi-bold color-white pb-5">The Course</h1>
+                    <h1 class="font-semi-bold color-white">The Course</h1>
                 </div>
             </section>
                 <!-- ***************************************  COURSE INFO  *************************************** -->
@@ -34,112 +34,121 @@ get_header();?>
                     </div>
                  </div>
             </section>
-            	<!-- *****************************************  FRONT 9  ***************************************** -->
 
             <section class="front-9">
                 <div class="container-fluid grid-container px-0 center-text">
+                <!-- *****************************************  FRONT 9  ***************************************** -->
                     <p class="grid-header uppercase-text"><h1>FRONT NINE</h1></p>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-1.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #1</h1>
-                                    <p>276 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-1.jpg" alt="hole 1">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #1</h1>
+                                        <p>276 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-2.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #2</h1>
-                                    <p>162 Yards | Par 3</p>
+                            <div class="course-squares square">
+                                <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-2.jpg" alt="hole 2">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #2</h1>
+                                        <p>162 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-3.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #3</h1>
-                                    <p>351 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-3.jpg" alt="hole 3">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #3</h1>
+                                        <p>351 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-4.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #4</h1>
-                                    <p>503 Yards | Par 5</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-4.jpg" alt="hole 4">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #4</h1>
+                                        <p>503 Yards | Par 5</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-5.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #5</h1>
-                                    <p>155 Yards | Par 3</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-5.jpg" alt="hole 5">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #5</h1>
+                                        <p>155 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-6.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #6</h1>
-                                    <p>398 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-6.jpg" alt="hole 6">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #6</h1>
+                                        <p>398 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-7.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #7</h1>
-                                    <p>204 Yards | Par 3</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-7.jpg" alt="hole 7">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #7</h1>
+                                        <p>204 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-8.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #8</h1>
-                                    <p>387 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-8.jpg" alt="hole 8">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #8</h1>
+                                        <p>387 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-9.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #9</h1>
-                                    <p>133 Yards | Par 3</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-9.jpg" alt="hole 9">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #9</h1>
+                                        <p>133 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -153,105 +162,114 @@ get_header();?>
                     <p class="grid-header uppercase-text pt-5"><h1>BACK NINE</h1></p>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-10.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #10</h1>
-                                    <p>534 Yards | Par 5</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-10.jpg" alt="hole 10">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #10</h1>
+                                        <p>534 Yards | Par 5</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-11.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #11</h1>
-                                    <p>317 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-11.jpg" alt="hole 11">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #11</h1>
+                                        <p>317 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-12.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #12</h1>
-                                    <p>353 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-12.jpg" alt="hole 12">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #12</h1>
+                                        <p>353 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-13.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #13</h1>
-                                    <p>172 Yards | Par 3</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-13.jpg" alt="hole 13">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #13</h1>
+                                        <p>172 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-14.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #14</h1>
-                                    <p>328 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-14.jpg" alt="hole 14">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #14</h1>
+                                        <p>328 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-15.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #15</h1>
-                                    <p>363 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-15.jpg" alt="hole 15">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #15</h1>
+                                        <p>363 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         </div>
                     <div class="row no-margin justify-content-center grid-row center-text">
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square" style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-16.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #16</h1>
-                                    <p>163 Yards | Par 3</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-16.jpg" alt="hole 16">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #16</h1>
+                                        <p>163 Yards | Par 3</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-17.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #17</h1>
-                                    <p>549 Yards | Par 5</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-17.jpg" alt="hole 17">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #17</h1>
+                                        <p>549 Yards | Par 5</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4 col-md-2 px-0">
-                            <div class="grid-view square"style="background-image: linear-gradient(90deg, rgba(0,0,0, 0),rgba(0,0,0, .4)), url(<?php echo get_template_directory_uri(); ?>/public/img/course/hole-18.jpg); background-position: center; background-size: contain;">
-                            </div>
-                            <div class="greenfees-white-border">
-                                <div class="grid__inner-text">
-                                    <a href="#"><i class="far fa-play-circle"></i></a>
-                                    <h1>Hole #18</h1>
-                                    <p>294 Yards | Par 4</p>
+                            <div class="course-squares square">
+                            <img class="course-squares-img" src="<?php echo get_template_directory_uri(); ?>/public/img/course/hole-18.jpg" alt="hole 18">
+                                <div class="greenfees-white-border">
+                                    <div class="grid__inner-text">
+                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <h1>Hole #18</h1>
+                                        <p>294 Yards | Par 4</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

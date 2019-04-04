@@ -12005,6 +12005,12 @@ ul.ml-auto {
   /* initial ratio of 1:1*/
 }
 
+.square-holes:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 .rectangle:before {
   content: "";
   display: block;
@@ -12031,7 +12037,6 @@ ul.ml-auto {
 
 .grid-img {
   border: 0.75rem solid #fff;
-  background-size: cover;
 }
 
 .grid-view {
@@ -12152,11 +12157,7 @@ img.grid {
 
   div.grid-view {
     width: 100%;
-    height: 100%;
-  }
-
-  div.grid-img {
-    width: calc(100vw-4rem);
+    height: auto;
   }
 
   div.row {
@@ -12170,15 +12171,51 @@ img.grid {
   }
 }
 
+@media (max-width: 574px) {
+  .grid-calendar {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+
+  .grid-box,
+  .grid-view {
+    height: auto;
+  }
+
+  .grid-box .grid__inner-text,
+  .grid-view .grid__inner-text {
+    padding: 50px 5px;
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .grid-view-calendar {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .square:before {
+    padding: unset;
+  }
+}
+
 @media (max-width: 28em) {
   .grid-section {
     padding: 0;
   }
+}
 
-  .grid-calendar {
-    width: 40vw;
-    height: 25vw;
-  }
+.nav-link.dropdown-toggle {
+  padding-left: 2.5rem;
 }
 
 footer {
@@ -12219,23 +12256,23 @@ footer li {
   }
 
   .footer-col ul {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .footer-col ul h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+  }
+
+  .footer-col ul.mx-6 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
-@media (max-width: 43.5em) {
+@media (max-width: 48em) {
   .footer-col {
     margin-bottom: 2rem;
     height: 100%;
-  }
-
-  .footer-col.mx-6 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   }
 }
 
@@ -12243,13 +12280,18 @@ footer li {
   footer {
     margin: 3rem 0;
   }
-
-  .footer-col {
-    border: 1px solid #7f6441;
-  }
 }
 
 .hero {
+  position: relative;
+  min-height: 60rem;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-home {
   position: relative;
   min-height: 60rem;
   background-size: cover;
@@ -12444,7 +12486,7 @@ footer li {
   }
 }
 
-@media (max-width: 43.5em) {
+@media (max-width: 48em) {
   .grid__inner-text p {
     font-size: 1.8rem;
   }
@@ -12452,11 +12494,23 @@ footer li {
   .hero__main-text h2 {
     font-size: 1.8rem;
   }
+
+  .map {
+    min-height: 30rem;
+  }
 }
 
 @media (max-width: 28em) {
   .grid__inner-text p {
     font-size: 2.4rem;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-homepage-banner.course-bg {
+    min-height: auto;
   }
 
   .hero.main-bg {
@@ -12468,12 +12522,26 @@ footer li {
     min-height: 100vh;
   }
 
-  .hero.course-bg {
-    min-height: 100vh;
+  .hero-title {
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    top: 0;
+    left: 0;
+    padding: 100px 5px;
   }
 
   .hero__main-text h2 {
     text-align: justify;
+  }
+
+  .hero__main-text-pages {
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    top: 0;
+    left: 0;
+    padding: 100px 5px;
   }
 
   .hero__tee-text {
@@ -12495,11 +12563,21 @@ footer li {
   }
 
   .hero__course-text {
+    position: relative;
     text-align: center;
   }
 
   .hero__course-text h1 {
     font-size: 2.4rem;
+  }
+
+  .hero__course-text.padding-right-large {
+    height: auto;
+    padding: 50px 5px;
+  }
+
+  .hero.course-bg {
+    height: auto;
   }
 }
 
@@ -12736,6 +12814,13 @@ footer li {
   outline-offset: -5px;
 }
 
+@media (max-width: 28em) {
+  .greenfees h1,
+  .greenfees-packages h1 {
+    font-size: 2.4rem;
+  }
+}
+
 .about .hero {
   width: 100%;
   max-height: 600px;
@@ -12795,13 +12880,38 @@ footer li {
 }
 
 @media (max-width: 28em) {
+  .text-items {
+    position: relative !important;
+    padding: 100px 5px !important;
+  }
+
+  .container-fluid.about {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .text-left.pr-lg-6 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .text-left.pl-lg-6 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
   .contact__info--contact-us {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
 
+  .hero-carroll {
+    padding: 100px 5px;
+  }
+
   .hero-carroll h1 {
     font-size: 2.4rem;
+    padding-bottom: 3rem;
   }
 
   .hero-carroll p {
@@ -12847,6 +12957,28 @@ footer li {
           transform: rotate(90deg);
 }
 
+.front-9 .grid__inner-text,
+.back-9 .grid__inner-text {
+  position: relative;
+}
+
+.front-9 .course-squares,
+.back-9 .course-squares {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.front-9 .course-squares-img,
+.back-9 .course-squares-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
 .course-statistics .table-container {
   overflow: scroll;
 }
@@ -12880,6 +13012,35 @@ footer li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 570px) {
+  .front-9 .greenfees-white-border,
+  .back-9 .greenfees-white-border {
+    position: relative;
+  }
+
+  .front-9 .grid__inner-text,
+  .back-9 .grid__inner-text {
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    padding: 50px 5px;
+  }
+
+  .front-9 .course-squares-img,
+  .back-9 .course-squares-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 28em) {
@@ -12921,7 +13082,7 @@ footer li {
   left: 0;
 }
 
-@media (max-width: 43.5em) {
+@media (max-width: 48em) {
   .lessons-clinics .gift-box h1 {
     font-size: 2.4rem;
   }

@@ -23,7 +23,7 @@ get_header();?>
             <!-- ****************************************  ALTERNATING IMAGES  **************************************** -->
 
             <section class="alternating">
-                <div class="container-fluid px-0 mx-0 mt-7">
+                <div class="container-fluid px-0 mx-0 mt-3 mt-sm-7">
                     <div class="row">
                         <div class="col-lg-6 px-0">
                             <img class="contact-logo darken"src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/clubhouse.jpg" alt="Club House">
@@ -52,7 +52,7 @@ get_header();?>
                 <!-- ****************************************  PRO SHOP IMAGE  **************************************** -->
 
             <section class="hero mt-xl-7" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
-                <div class="container-fluid pb-7 color-white font-regular text-center">
+                <div class="container-fluid about pb-sm-7 color-white font-regular text-center">
                     <div class="d-flex row align-text-top justify-content-center">
                         <div class="text-items col-lg-6 align-self-end">
                             <h1 class="font-semi-bold color-white pb-5">Pro Shop</h1>
@@ -133,13 +133,13 @@ get_header();?>
                 <!-- ****************************************  CARROLL TRAIL IMAGE  **************************************** -->
 
             <section class="hero hero-carroll" style="background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .8)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-carroll-trail.jpg');">
-                <div class="container-fluid pb-7 color-white font-regular">
-                    <h1 class="text-center pt-7 pb-5 color-white">The Carroll Trail</h1>
+                <div class="container-fluid about pb-sm-7 color-white font-regular">
+                    <h1 class="text-center pt-sm-7 pb-sm-5 color-white">The Carroll Trail</h1>
                     <div class="row carroll-trail align-text-top justify-content-center">
-                        <div class="col-lg-4 text-left pr-6">
+                        <div class="col-lg-4 text-left pr-lg-6">
                             <p class="font-sans color-white font-regular">A unique feature of The Bridges at Tillsonburg golf course is the fact that there is a community trail system weaving through the new expansion holes on the golf course.<br><br> The trail system became a major attraction for the Tillsonburg Golf Club's expansion to 18 holes. The Tillsonburg Trail Committee (TTC) was formed and undertook the fundraising for this $1.2 million dollar project. The project was completely fund raised and paid for by public donations with the generous support of Pat and Liz Carroll and family.<br><br> This non-motorized 3-season trail is fully accessible to the public and compliments the existing trail systems throughout the town. The 5.1 km trail winds through beautiful natural areas in, around and through the Otter Creek floodplain crossing the creek in a number of locations. </p>
                         </div>
-                        <div class="col-lg-4 text-left pl-6">
+                        <div class="col-lg-4 text-left pl-lg-6">
                             <p class="color-white">It provides recreation opportunities for residents and tourists alike. The 2.8 metre width can accommodate two-way traffic for walking, jogging and cross country skiing.<br><br> Sections of the Carroll Trail are finished with asphalt due to the elevation changes and to prevent erosion on these sloped areas. Approximately 170 tons of Armor-stone were used for erosion control and to give character to the trail and 6,000 tons of gravel and screenings were put down to make up the trail itself. Many native to the Carolinian Forest trees were planted along the entire trail system for beauty and to provide erosion control. Native plants, in the form of 'live stakes' were added as well.<br><br>  The Carroll Trail trail head originates in Coronation Park where there is ample parking available.</p>
                         </div>
                     </div>

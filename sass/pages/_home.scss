@@ -5,6 +5,14 @@
     background-position: top;
     background-repeat: no-repeat;
     overflow: hidden;
+    &-home {
+        position: relative;
+        min-height: 60rem;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
     &-title {
         text-align: center;
         @include absCenter;
@@ -120,6 +128,9 @@
         padding-top: 8rem;
     }
 }
+// ********************************************  HERO BACKGROUNDS  ********************************************
+
+
 
 .map {
     width: 100vw;
@@ -184,6 +195,10 @@
             }
         }
     }
+    
+    .map {
+        min-height: 30rem;
+    }
 }
 
 // ********************************************  LARGE PHONE  ********************************************
@@ -194,6 +209,10 @@
         p { font-size: $medium-font-size; }
     }
     .hero {
+        min-height: auto;
+        &-homepage-banner.course-bg {
+            min-height: auto;
+        }
         &.main-bg {
             min-height: 80vh;
         }
@@ -201,13 +220,24 @@
             background-position-x: right;
             min-height: 100vh;
         }
-        &.course-bg {
-            min-height: 100vh;
+        &-title {
+            position: relative;
+            transform: translate(0);
+            top: 0;
+            left: 0;
+            padding: 100px 5px;
         }
         &__main {
             &-text {
                 h2 {
                     text-align: justify;
+                }
+                &-pages {
+                    position: relative;
+                    transform: translate(0);
+                    top: 0;
+                    left: 0;
+                    padding: 100px 5px;
                 }
             }
         }
@@ -227,11 +257,18 @@
         }
         &__course {
             &-text {
+                position: relative;
                 text-align: center;
                 h1 { font-size: $medium-font-size; }
+                &.padding-right-large {
+                    height: auto;
+                    padding: 50px 5px;
+                }
             }
         }
-
+        &.course-bg {
+            height: auto;
+        }
     }
 }
 

@@ -49,11 +49,11 @@ RESPONSIVE REFRACTOR ORDER IS > base > typography > genral layout > grid > page 
     }
 
     @if $breakpoint == large-phone {
-        @media (max-width: 28em) { @content }; //(450px)
+        @media (max-width: 28em) { @content }; //(448px)
     }
 
     @if $breakpoint == large-phone-land {
-        @media (max-width: 43.5em) { @content }; //(764px)
+        @media (max-width: 48em) { @content }; //(768px)
     }
 
     @if $breakpoint == tab-port {
@@ -69,5 +69,5 @@ RESPONSIVE REFRACTOR ORDER IS > base > typography > genral layout > grid > page 
     }
 }
 
-
+ 
 
