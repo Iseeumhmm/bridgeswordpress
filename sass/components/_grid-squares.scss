@@ -109,7 +109,7 @@
             }
         }
         &-bracketed {
-            font-size: 1.25rem;
+            font-size: $small-font-size !important;
             text-transform: lowercase !important;
         }
     }

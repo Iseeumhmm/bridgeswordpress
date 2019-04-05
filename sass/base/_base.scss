@@ -25,9 +25,9 @@ html {
     @include respond(large-phone){
         font-size: 62.5%; //1rem = 8px : 8px/16px = 50% (450px)
     }
-    @include respond(small-phone){
-        font-size: 50%; //1rem = 8px : 8px/16px = 50% (360px)
-    }
+    // @include respond(small-phone){
+    //     font-size: 50%; //1rem = 8px : 8px/16px = 50% (360px)
+    // }
     @include respond(big-desktop){
         font-size: 62.5%; //1 rem = 10px : 10px/16px = 62.5%  (1800px)
     }

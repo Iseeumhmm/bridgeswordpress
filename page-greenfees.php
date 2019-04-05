@@ -121,7 +121,7 @@ get_header();?>
             <div class="container-fluid grid-container px-0 center-text">
                 <p class="grid-header uppercase-text mt-7"><h1>Green Fee Packages</h1></p>
                 <div class="row justify-content-center grid-row center-text mt-6">
-                    <div class="col-sm-6 col-lg-4 col-xl-2 px-0">
+                    <div class="col-sm-6 col-md-3 col-lg-2 px-0">
                         <div class="grid-box grid-silver ">
                             <div class="grid__inner-text-rectangle">
                                 <h1 class="mb-0">18 Holes</h1>
@@ -144,7 +144,7 @@ get_header();?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 col-xl-2 px-0">
+                    <div class="col-sm-6 col-md-3 col-lg-2 px-0">
                         <div class="grid-box grid-bronze">
                             <div class="grid__inner-text-rectangle">
                                 <h1 class="mb-0">9 Holes</h1>

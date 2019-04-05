@@ -40,7 +40,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <div class="navbar-mobile-center">
+                    <div class="navbar-nav ml-auto navbar-mobile-center">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a href="/book-a-tee" class="nav-link px-nav-link">Book a tee</a>
