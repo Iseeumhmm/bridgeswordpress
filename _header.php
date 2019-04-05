@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The header for our theme
@@ -8,7 +9,6 @@
  *
  * @package BridgesAtTillsonburg
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -40,32 +40,34 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="/book-a-tee" class="nav-link px-nav-link">Book a tee</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/about" class="nav-link px-nav-link">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">Golf</a>
-                            <div class="dropdown-menu">
-                                <a href="/the-course" class="dropdown-item">The Course</a>
-                                <a href="/proshop" class="dropdown-item">The Pro Shop</a>
-                                <a href="/lessons" class="dropdown-item">Lessons</a>
-                                <a href="/league" class="dropdown-item">League</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/events" class="nav-link px-nav-link">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/contact" class="nav-link px-nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/greenfees" class="nav-link px-nav-link">Green fees</a>
-                        </li>
-                    </ul>
+                    <div class="navbar-mobile-center">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="/book-a-tee" class="nav-link px-nav-link">Book a tee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/about" class="nav-link px-nav-link">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" area-expanded="false">Golf</a>
+                                <div class="dropdown-menu">
+                                    <a href="/the-course" class="dropdown-item">The Course</a>
+                                    <a href="/proshop" class="dropdown-item">The Pro Shop</a>
+                                    <a href="/lessons" class="dropdown-item">Lessons</a>
+                                    <a href="/league" class="dropdown-item">League</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/events" class="nav-link px-nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link px-nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/greenfees" class="nav-link px-nav-link">Green fees</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>

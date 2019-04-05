@@ -100,7 +100,7 @@
             <section class="contact">
                 <div class="container-fluid px-0 mx-0">
                     <div class="row">
-                        <div class="col-lg-6 px-0">
+                        <div class="col-lg-6 px-0 contact-logo-container">
                             <img class="contact-logo"src="<?php echo get_template_directory_uri(); ?>/public/img/thumbs/contact.jpg" alt="Contact Logo">
                         </div>
                         <div class="col-lg-6 px-0">
@@ -130,7 +130,7 @@
                             <h1>our team</h1>
                         </div>
                         <div class="row justify-content-center center-text">
-                            <div class="col-md-auto px-5 ">
+                            <div class="col-md-auto px-5 pb-5 pb-sm-0">
                                 <?php 
                                     $image = get_field('team_member_1_of_4_image');
                                     if( !empty($image) ): 
@@ -151,7 +151,7 @@
                                     <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="col-md-auto px-5">
+                            <div class="col-md-auto px-5 pb-5 pb-sm-0">
                                 <?php 
                                     $image = get_field('team_member_2_of_4_image');
                                     if( !empty($image) ): 
@@ -172,7 +172,7 @@
                                     <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="col-md-auto px-5">
+                            <div class="col-md-auto px-5 pb-5 pb-sm-0">
                                <?php 
                                     $image = get_field('team_member_3_of_4_image');
                                     if( !empty($image) ): 

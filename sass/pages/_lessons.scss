@@ -30,3 +30,19 @@
     }
     
 }
+
+// ***************************************************  574px  **************************************************
+
+@media (max-width: 574px) {
+    .lessons-clinics {
+        .grid__inner-text {
+            padding: 50px 5px;
+            position: relative;
+            transform: translate(0);
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    
+}

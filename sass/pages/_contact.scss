@@ -71,6 +71,7 @@
     color: $color-brown;
 }
 .contact-form {
+   
     &--error{
         padding: 5px 9px;
         border: 1px solid red;
@@ -108,10 +109,10 @@
         .btn {
             background-color: #f4f4f4;
             font-size: $default-font-size;
-            padding: 0;
+            padding: 0 1.6rem;
             margin-top: 2rem;
             border-radius: 0;
-            width: 40%;
+            width: auto;
         }
     }
 }
@@ -125,33 +126,43 @@
     display: inline-block;
     padding-top: 3rem;
 }
-
-
-// (450px)
-// (360px)
-
 // ************************************************  MEDIA QUERYS  *************************************************
 
-// *******************************************  iPAD LANDSCAPE (1200px)  ********************************************
-@include respond(tab-land) {
 
-    .contact-form form .btn {
-        width: 60%;
-    }
+// ********************************************  iPAD LANDSCAPE (1200px)  *********************************************
+@include respond(tab-land) {
+    .contact {
+        &-form {
+            form {
+                width: 70%;
+            }
+        }
+     }
 }
 
-// ********************************************  iPAD PORTRAIT (992px)  *********************************************
-@include respond(tab-land) {
-    .contact-form {
-        form {
-            width: 70%;
-            .btn {
-                width: 40%;
-            }
+@media (max-width: 990px) {
+    .contact {
+        &-logo-container {
+            display: none;
+        }
+        &__info.d-flex {
+            display: block !important;
+            text-align: center;
         }
     }
 }
 
+// ********************************************  LARGE PHONE (992px)  *********************************************
+@include respond(large-phone) {
+    .map-contact {
+        max-height: 300px;
+        min-height: auto;
+    }
+    .contact-form {
+        h1 { font-size: $large-font-size; }
+    }
+
+}
 
 // *********************************************  BIG DESKTOP (1800px)  ***********************************************
 

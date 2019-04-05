@@ -15,7 +15,7 @@
 get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-lessons.jpg');">
+            <section class="hero hero-home" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-lessons.jpg');">
                 <div class="hero__main-text-pages">
                    <h1>Lessons</h1>
                 </div>
@@ -36,35 +36,39 @@ get_header();?>
                 <p class="grid-header uppercase-text mt-6"><h1>Lessons and Clinics</h1></p>
                     <div class="row justify-content-center grid-row font-regular">
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-box grid-gold square-holes"></div>
-                            <div class="grid__inner-text">
-                                <h1>1 Session</h1>
-                                <p><p class="grid__inner-dash-padding">-</p><?php the_field('1_session_price'); ?></p>
-                                <a href"#"><p class="book-now">Book Now</p></a>
+                            <div class="grid-box grid-gold square">
+                                <div class="grid__inner-text">
+                                    <h1>1 Session</h1>
+                                    <p><p class="grid__inner-dash-padding">-</p><?php the_field('1_session_price'); ?></p>
+                                    <a href"#"><p class="book-now">Book Now</p></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-box grid-silver square-holes"></div>
-                            <div class="grid__inner-text">
-                                <h1>3 Session</h1>
-                                <p><p class="grid__inner-dash-padding">-</p><?php the_field('3_session_price'); ?></p>
-                                <a href"#"><p class="book-now">Book Now</p></a>
+                            <div class="grid-box grid-silver square">
+                                <div class="grid__inner-text">
+                                    <h1>3 Session</h1>
+                                    <p><p class="grid__inner-dash-padding">-</p><?php the_field('3_session_price'); ?></p>
+                                    <a href"#"><p class="book-now">Book Now</p></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-box grid-bronze square-holes"></div>
-                            <div class="grid__inner-text">
-                                <h1>5 Session</h1>
-                                <p><p class="grid__inner-dash-padding">-</p><?php the_field('5_session_price'); ?></p>
-                                <a href"#"><p class="book-now">Book Now</p></a>
+                            <div class="grid-box grid-bronze square">
+                                <div class="grid__inner-text">
+                                    <h1>5 Session</h1>
+                                    <p><p class="grid__inner-dash-padding">-</p><?php the_field('5_session_price'); ?></p>
+                                    <a href"#"><p class="book-now">Book Now</p></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 px-0">
-                            <div class="grid-box grid-black square-holes"></div>
-                            <div class="grid__inner-text">
-                                <h1>Junior</h1>
-                                <p><p class="grid__inner-dash-padding">-</p><?php the_field('junior_lessons_price'); ?></p>
-                                <a href"#"><p class="book-now">Book Now</p></a>
+                            <div class="grid-box grid-black square">
+                                <div class="grid__inner-text">
+                                    <h1>Junior</h1>
+                                    <p><p class="grid__inner-dash-padding">-</p><?php the_field('junior_lessons_price'); ?></p>
+                                    <a href"#"><p class="book-now">Book Now</p></a>
+                                </div>
                             </div>
                         </div>
                     </div>

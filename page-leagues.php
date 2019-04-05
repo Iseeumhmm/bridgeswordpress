@@ -15,7 +15,7 @@
 get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-golf-leagues.jpg');">
+            <section class="hero hero-home" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-golf-leagues.jpg');">
                 <div class="hero__main-text-pages">
                    <h1>Golf Leagues</h1>
                 </div>
@@ -58,7 +58,7 @@ get_header();?>
                             </div>
                         </div>
                     <!-- ***************************************** WOMEN'S LEAGUE  ***************************************** -->
-                    <div class="row mt-7">
+                    <div class="row alternating-col mt-7">
                         <div class="d-flex col-lg-6 px-0">
                             <div class="contact__info--contact-us align-self-center pl-7 pb-6 pr-8">
                                 <h1><?php the_field('womens_league_title'); ?></h1>

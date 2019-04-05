@@ -16,7 +16,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <!-- *****************************************  HERO BANNER  ***************************************** -->
-            <section class="hero" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
+            <section class="hero hero-home" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-pro-shop.jpg');">
                 <div class="hero-title">
                     <h1 class="font-semi-bold color-white">Pro Shop</h1>
                 </div>

@@ -11971,6 +11971,14 @@ ul.ml-auto {
   font-size: 1.5rem;
 }
 
+@media (max-width: 62em) {
+  .navbar-mobile-center {
+    display: inline-block;
+    text-align: center;
+    padding: 25px 0 25px 8rem;
+  }
+}
+
 @media (max-width: 75em) {
   .navbar-nav .nav-link:focus,
   .navbar-nav .nav-link {
@@ -11986,15 +11994,13 @@ ul.ml-auto {
   button.navbar-toggler.mr-6 {
     margin-right: 1rem !important;
   }
-}
-
-@media (max-width: 28em) {
-  nav .navbar-brand {
-    margin-left: 2rem;
-  }
 
   ul.ml-auto {
     margin-right: 2rem;
+  }
+
+  .navbar-mobile-center {
+    padding: 25px 0;
   }
 }
 
@@ -12036,7 +12042,7 @@ ul.ml-auto {
 }
 
 .grid-img {
-  border: 0.75rem solid #fff;
+  border: 0.5rem solid #fff;
 }
 
 .grid-view {
@@ -12096,6 +12102,25 @@ ul.ml-auto {
 
 .grid__inner-text p {
   color: #fff;
+}
+
+.grid__inner-text-rectangle {
+  padding: 50px 5px;
+  position: relative;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.grid__inner-text-rectangle h1,
+.grid__inner-text-rectangle p {
+  color: #fff;
+}
+
+.grid__inner-text-rectangle h1 {
+  font-size: 3.6rem;
 }
 
 .grid__inner-text h1 {
@@ -12169,6 +12194,10 @@ img.grid {
     width: 100%;
     height: 100%;
   }
+
+  .rectangle:before {
+    padding-top: 200%;
+  }
 }
 
 @media (max-width: 574px) {
@@ -12206,16 +12235,16 @@ img.grid {
   .square:before {
     padding: unset;
   }
+
+  .rectangle:before {
+    padding: unset;
+  }
 }
 
 @media (max-width: 28em) {
   .grid-section {
     padding: 0;
   }
-}
-
-.nav-link.dropdown-toggle {
-  padding-left: 2.5rem;
 }
 
 footer {
@@ -12284,7 +12313,6 @@ footer li {
 
 .hero {
   position: relative;
-  min-height: 60rem;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -12292,12 +12320,7 @@ footer li {
 }
 
 .hero-home {
-  position: relative;
   min-height: 60rem;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .hero-title {
@@ -12311,11 +12334,6 @@ footer li {
 
 .hero h1 {
   font-size: 4.8rem;
-}
-
-.hero-homepage-banner {
-  min-height: 80rem;
-  background-position: top;
 }
 
 .hero__main-text {
@@ -12370,21 +12388,19 @@ footer li {
 }
 
 .hero__tee-text {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  height: auto;
+  text-align: center;
+  padding: 100px 5px;
 }
 
 .hero__tee-text h1 {
-  font-size: 6rem;
+  font-size: 3.6rem;
   letter-spacing: 1rem;
 }
 
 .hero__tee-text p {
   margin: 2rem 0;
   font-size: 2.4rem;
-  width: 60%;
 }
 
 .hero__tee-phone {
@@ -12404,16 +12420,13 @@ footer li {
 }
 
 .hero__course-text {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 50%;
+  padding: 100px 5px;
   color: #fff;
-  text-align: right;
+  text-align: center;
 }
 
 .hero__course-text h1 {
-  font-size: 6rem;
+  font-size: 3.6rem;
   color: #fff;
 }
 
@@ -12434,15 +12447,6 @@ footer li {
 
 .hero__course-view:hover {
   background-color: #998367;
-}
-
-.hero-events {
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding-top: 8rem;
 }
 
 .map {
@@ -12480,10 +12484,6 @@ footer li {
   .hero__course-text {
     width: 100%;
   }
-
-  .hero__course-text.padding-right-large {
-    padding: 0 5rem;
-  }
 }
 
 @media (max-width: 48em) {
@@ -12519,7 +12519,7 @@ footer li {
 
   .hero.tee-bg {
     background-position-x: right;
-    min-height: 100vh;
+    min-height: auto;
   }
 
   .hero-title {
@@ -12545,8 +12545,7 @@ footer li {
   }
 
   .hero__tee-text {
-    text-align: right;
-    padding: 0 1rem;
+    padding: 50px 5px;
   }
 
   .hero__tee-text h1 {
@@ -12554,7 +12553,7 @@ footer li {
   }
 
   .hero__tee-text p {
-    float: right;
+    width: 100%;
     font-size: 1.8rem;
   }
 
@@ -12562,18 +12561,8 @@ footer li {
     text-align: center;
   }
 
-  .hero__course-text {
-    position: relative;
-    text-align: center;
-  }
-
   .hero__course-text h1 {
     font-size: 2.4rem;
-  }
-
-  .hero__course-text.padding-right-large {
-    height: auto;
-    padding: 50px 5px;
   }
 
   .hero.course-bg {
@@ -12750,10 +12739,10 @@ footer li {
 .contact-form form .btn {
   background-color: #f4f4f4;
   font-size: 1.8rem;
-  padding: 0;
+  padding: 0 1.6rem;
   margin-top: 2rem;
   border-radius: 0;
-  width: 40%;
+  width: auto;
 }
 
 #respond {
@@ -12769,18 +12758,30 @@ footer li {
 }
 
 @media (max-width: 75em) {
-  .contact-form form .btn {
-    width: 60%;
-  }
-}
-
-@media (max-width: 75em) {
   .contact-form form {
     width: 70%;
   }
+}
 
-  .contact-form form .btn {
-    width: 40%;
+@media (max-width: 990px) {
+  .contact-logo-container {
+    display: none;
+  }
+
+  .contact__info.d-flex {
+    display: block !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 28em) {
+  .map-contact {
+    max-height: 300px;
+    min-height: auto;
+  }
+
+  .contact-form h1 {
+    font-size: 3.6rem;
   }
 }
 
@@ -12841,6 +12842,10 @@ footer li {
   padding: 2rem;
 }
 
+.pro-shop-container {
+  min-height: 65rem;
+}
+
 @media (max-width: 75em) {
   .hero-carroll {
     background-attachment: unset;
@@ -12866,6 +12871,10 @@ footer li {
 
   .carroll-trail .col-lg-4.pr-6 {
     padding: 0 3rem !important;
+  }
+
+  .alternating .contact__info--contact-us p {
+    font-size: 1.8rem !important;
   }
 }
 
@@ -12919,15 +12928,19 @@ footer li {
   }
 
   .team h1 {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
   }
 
   .team .description {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .team .member {
     padding-bottom: 3rem;
+  }
+
+  .pro-shop-container {
+    min-height: auto;
   }
 }
 
@@ -13092,6 +13105,18 @@ footer li {
   }
 }
 
+@media (max-width: 574px) {
+  .lessons-clinics .grid__inner-text {
+    padding: 50px 5px;
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .league-info p,
 .dates-times p {
   color: #7f6441;
@@ -13117,6 +13142,11 @@ footer li {
 .league-rows h3,
 .dates-times h3 {
   padding: 0 0 2rem;
+  font-size: 1.8rem;
+}
+
+.league-rows p,
+.dates-times p {
   font-size: 1.8rem;
 }
 

@@ -39,7 +39,7 @@ get_header();?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <!-- ***************************************  MAIN HERO IMAGE  *************************************** -->
-            <section class="hero-home hero-homepage-banner main-bg" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home.jpg');">
+            <section class="hero hero-home main-bg" style="background-image: linear-gradient(rgba(0,0,0, 0),rgba(0,0,0, .2)),url('<?php echo get_template_directory_uri(); ?>/public/img/banners/banner-home.jpg');">
                 <div class="hero__main-text">
                     <p><h2>The Bridges offers the best of traditional course style, with beautiful views and elevation changes in 10 new holes that wind through the Otter Valley.</h2>
                     </p>
@@ -141,20 +141,20 @@ get_header();?>
             </section>
             <!-- ***************************************  TEE TIMES  *************************************** -->
             
-            <section class="hero hero-homepage-banner tee-bg">
-                <div class="hero__tee-text pl-sm-5 pl-lg-7">
+            <section class="hero tee-bg">
+                <div class="hero__tee-text">
                     <h1>Tim's Tee Times</h1>
                     <p>Each day we offer specially priced green fees in a limited number</p>
                     <div class="hero__tee-phone color-brown">
-                            <a href="tel:5198424142">Call today to reserve!<br>519 842 4142</a>
+                        <a href="tel:5198424142">Call today to reserve!<br>519 842 4142</a>
                     </div>
                 </div>
             </section>
             
             <!-- *********************************  GET TO KNOW THE COURSE  ********************************* -->
 
-            <section class="hero hero-homepage-banner course-bg">
-                <div class="hero__course-text padding-right-large pb-7">
+            <section class="hero course-bg">
+                <div class="hero__course-text">
                     <h1>Get to know our courses from the air!</h1>
                     <p class="pt-3 color-white">Thanks to our new drone footage, you can get aquainted with each of our courses before you try them.</p>
                         <a href="/bridges/the-course">

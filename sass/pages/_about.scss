@@ -16,7 +16,9 @@
           padding: 2rem;
       }
   }
-  
+  .pro-shop-container {
+      min-height: 65rem;
+  }
   // ********************************************  RESPONSIVE  *********************************************
 
 @include respond(tab-land) {
@@ -40,6 +42,11 @@
         }
         .col-lg-4.pr-6 {
             padding: 0 3rem !important;
+        }
+    }
+    .alternating{
+        .contact__info--contact-us {
+            p { font-size: $default-font-size !important; }
         }
     }
 }
@@ -83,12 +90,15 @@
         padding: 100px 5px;
     }
     .team {
-        h1 { font-size: $medium-font-size; }
+        h1 { font-size: $large-font-size; }
         .description {
-            font-size: $small-font-size; 
+            font-size: $default-font-size; 
         }
         .member {
             padding-bottom: 3rem;
         }
+    }
+    .pro-shop-container {
+        min-height: auto;
     }
 }
